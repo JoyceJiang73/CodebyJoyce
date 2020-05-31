@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Four Sentiment Analysis Methods in Python</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="../../index.html">
+            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="../../theme/page/about-2.html" style="color:black">About Me</a>
+            <a class="nav-link" href="../../theme/blog/research.html" style="color:black">Research</a>
+            <a class="nav-link" href="../../theme/blog/project.html" style="color:black">Project</a>
+            <a class="nav-link" href="../../theme/blog/data.html" style="color:black">Data Analytics</a>
+            <a class="nav-link" href="../../theme/page/contact-1.html" style="color:black">Contact</a>
+          </nav>
+        </section>
+
+        <a class="btn btn-sm btn-round btn-dark" href="../../theme/page/about-2.html">About Me</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Blog content
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section">
+        <div class="container">
+
+          <div class="text-center mt-8">
+            <h2>Review: Four Sentiment Analysis Methods in Python (1)</h2>
+            <p>June 1, 2020 By <a href="#">Joyce Jiang</a></p>
+          </div>
+
+
+          <div class="text-center my-8">
+            <img class="rounded-md" src="../assets/img/thumb/emoji3.jpg" alt="...">
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+              <p class="lead">Sentiment analysis is a sub-division in the <strong>Natural Language Processing (NPL)</strong>. In this review, we test four sentiment analytics tools, which are the most popular and common ones you could find online. There are some preexisting tools, designed for tracking public opinions, also provide the sentiment analysis functions, such as Brand24, Keyhole or even Google Trend. It is fully discretionary for users to choose between writing a Python script or using preexisting tools with a sentiment analysis function developed by data scientists. I personally feel more comfortable to use Python because I’m more familiar with the coding language and I prefer writing a code to exploring an unfamiliar dashboard.</p>
+ 
+              <div class="text-center my-8">
+                <img class="rounded-md" src="../assets/img/thumb/emoji.png" alt="...">
+                <p>Photo by visuals on Unsplash</p>
+              </div>
+
+              <hr class="w-100px">
+
+              <p>The four tools we selected could be divided into <strong>supervised and unsupervised models</strong>. The supervised models include <strong>Sentiment Intensity Analyzer (SIA), TextBlob, and Natural Language Toolkit (NLTK)</strong>. All these three models are commonly used in Data Scientist Tutorials and among beginner level of Python users. Though I identify them as SIA,TextBlob and NLTK, it is important to notice that we also need to import NLTK package to preprocess and clean the text before using SIA and TextBlob tools. NLTK is the most common natural language processor, which could be used for tokenization, stopword, lemmatization, etc.</p>
+              <p>For the <strong>unsupervised model</strong>, I used a combination of <strong>word2vec</strong> and <strong>K-means clustering analysis</strong>. This combination has frequently been used for conducting text categorization, sentiment analysis and other NLP analysis. Word2vec is a deep learning tool, designed for categorizing similar words based on their context. The fundamental of word2vec is that this algorithm can help you to vectorize a single word, i.e. representing a word in vector format:</p>
+              <p style="font-family:monospace;text-align: center;color:blue"><strong>&ldquo;apple&rdquo;: [1,5,0,4,7]</strong></p>
+              <p style="text-align: center">but word2vec would vectorize a word into hundreds of dimensions</p>
+
+              <div class="text-center my-8">
+                <img class="rounded-md" src="../assets/img/thumb/emoji2.png" alt="...">
+                <p>Photo by KOBU Agency on Unsplash</p>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+              <p><strong>How to understanding this? </strong></p>
+              <p>The fundamental of word2vec has been explained by a lot of Youtubers and Bloggers in data science. For further readings, you can check it out <a href="https://www.youtube.com/watch?v=LSS_bos_TPI"><strong><em>What is word2vec? - Programming with Text</em></strong></a></p>
+              <p>For simplicity, vectorizing a word means using vector to represent a word but at the same time retain the contextual information a word contains when you feed the model with the cleaned text/ dataset.</p>
+              <p style="font-family:monospace;text-align: center;"><strong>Word Vectorization</strong></p>
+              <p style="font-family:monospace;text-align: center;color:blue;"><strong>King &ndash; Male + Female = Queen</strong></p>
+              <p style="font-family:monospace;text-align: center;color:blue;"><strong>Cat + Cuteness = Kitten</strong></p>
+              <p><strong>What to expect?</strong></p>
+              <p>For the simplistic of this tool exploration review, I would not go through the whole details of explaining the algorithms and fundamentals of NLP or sentiment analysis. In this review, I would like to focus on the comparison of these four sentimental analysis approaches in Python.</p>
+              <p>&nbsp;</p>
+              <p><strong>My data sample</strong></p>
+              <p>&nbsp;I use the dataset I scraped from subjects related to COVID19 in Uganda on Twitter to test these models. <strong>There is no scientific reason for doing that</strong>. I chose Ugandan COVID19 topics because I was working on a communication research project with Whitehead Communication from Kampala, Uganda.</p>
+              <p>I tend to find a lot of Uglish (Ugandan English) and Swahili words in Tweets, which makes it super hard to give an accuracy or even meaning prediction. Additionally, there are so many satires, conflicted and mixed expression on Twitter, which became even challenging for us to do the labeling work manually, so you could image how difficult it would be for algorithms to give accurate prediction for those tweets.</p>
+              <p>Luckily, with the help of Anne Whitehead, I got 300 labeled tweets to test the accuracy of all these tools. If you are testing with English-only content or text will less satires and conflicted expression, such as IMDB movie reviews, and Yelp restaurant reviews, I am sure you will get a more accurate result than I had. I also find it generally useful if you start testing with those review datasets because they always contained the ratings given by customers. <strong>You do not need to label it manually, which is also a labor-intensive activity. </strong></p>
+              <p>In my review, I will <strong>briefly explain each model in the order from the simplest to the most complex approach</strong>, <strong>compare their strength, weakness, and accuracy</strong>. I will also calculate an average score of all three supervised tools and adjust thresholds to see if I can further improve the accuracy. In my conclusion, I will select the one with the best performance, introduce the limitation in this review and recommend the other exploratory research directions and further readings.</p>
+
+              <p>&nbsp;</p>
+              <h4>Sentiment Intensity Analyzer (SIA) – Learn sentiment analysis in 5 minutes </h4>
+              <p>SIA is a tool based on <a href="http://t-redactyl.io/blog/2017/04/using-vader-to-handle-sentiment-analysis-with-social-media-text.html">Vader</a> library, which contains pre-labeled sentiment ratings for each word in this library. The words in Vader were almost randomly handpicked by people on Internet and scores were also labeled by the Internet people, so the scoring process was not automated by an algorithm. SIA is super easy to use. You can check out the Python script in my <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/Sentiment_SentimentIntensityAnalyzer.ipynb"><strong>Jupyter Notebook</strong></a>. However, there isn&rsquo;t a lot of information about SIA online.</p>
+                <img class="rounded-md" src="../assets/img/thumb/crop.png" alt="...">
+                <p>&nbsp;</p>
+              <p><strong>Strength</strong></p>
+              <p>Easy to use! Like I said, you can learn it in 5 minutes including appending results to a data frame. The only code you will need to run SIA is sia.polarity_scores(text) to get a result of polarity.</p>
+              <p>The measurement you can get from sia.polarity_scores function is <strong>negative, positive, neutral </strong>and<strong> compound</strong>. Although in most cases, people only use compound scores for labeling positive and negative sentiments, negative, positive, and neutral scores are handful when you want to set different thresholds to filter the valid results and enhance accuracy rates (of course, the number of sample data will decrease accordingly when you choose to do so).</p>
+              <p><strong>Weakness</strong></p>
+              <p>SIA gives prediction to sentiments based on the simple rule of averaging positive and negative scores received by words. When there are negation, satires (such as Twitter), complex or conflicted content in the document, SIA becomes unreliable. The overall accuracy score I got for testing this method is around 60%.&nbsp;</p>
+              <p>If you want to know more how it, you can check this tutorial on <a href="https://github.com/llSourcell/Sentiment_Analysis/blob/master/Sentiment_Analysis.ipynb">GitHub</a>, or take a close look at my <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/Sentiment_SentimentIntensityAnalyzer.ipynb"><strong>Jupyter Notebook</strong></a>. To know more about Vader library, you can check out <a href="http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf">this paper</a> <em>VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text</em>.</p>              
+              <p>&nbsp;</p>
+              <h4>TextBlob – As simply as SIA</h4>
+              <p>TextBlob is based on a different library called pattern. Pattern is specifically designed for social media, which is supposed to be more specialized and accurate if you&rsquo;re using it to analyze social media content. However, when I take a close look at what specific social media content is used during the labeling process, you might not think TextBlob is that reliable. The words in pattern is also handpicked but this time it&rsquo;s based on the frequency of words in customer reviews. When using TextBlob for sentiment analysis, it does give very different results from SIA.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop2.png" alt="...">
+              <p>&nbsp;</p>
+              <p>TextBlob calculate both the polarity and subjectivity scores of a document based on its intensity, which could also be found in TextBlob&rsquo;s function list. It&rsquo;s result calculation is similar to weighted average but is a more sophisticated one. I won&rsquo;t go through the details, but you can find a reading about it <a href="https://planspace.org/20150607-textblob_sentiment/"><strong><em>TextBlob Sentiment: Calculating Polarity and Subjectivity</em></strong></a><strong><em>.</em></strong></p>
+                <img class="rounded-md" src="../assets/img/thumb/crop3.png" alt="...">
+                <p>&nbsp;</p>
+              <p><strong>Strength: </strong></p>
+              <p>The tool is as simple as SIA, which means you only need to type textblob=TextBlob(text), followed by textblob.sentiment to get a result You can check out the Python script in my <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/Sentiment_TextBlob.ipynb"><strong>Jupyter Notebook</strong></a>. Differing from SIA which only gives polarity information for a document, TextBlob has other functions as well. Subjectivity is automatically there when you use the textblob.sentiment function. Similarly, subjectivity would also be handful when you went to set different thresholds to filter the predicted results.</p>
+              <p>Additionally, TextBlob also has translate, tags, intensity and many others function to process or preprocess the text, which makes it more capable than SIA. This video <a href="https://www.youtube.com/watch?time_continue=198&amp;v=qTyj2R-wcks&amp;feature=emb_title"><strong><em>Sentiment Analysis in Python with TextBlob and VADER Sentiment</em></strong></a> to explore several TextBlob&rsquo;s function.</p>
+              <p><strong>Weakness</strong></p>
+              <p>I personally don&rsquo;t find it work effectively with Twitter sentiments. It has accuracy of 52% with my data, which is the lowest among all four approaches because it has similar weakness faced by SIA.</p>
+              <p>TextBlob could also use alternative word scores for sentiment analysis, which are the scores automated by <strong>NaiveBayesAnalyzer</strong>. With this tool, users can train and test TextBlob with contextual data, and subsequentially increasing its accuracy. Since I conducted a method with purely NLTK packages but have very similar rationale with using NaiveBayesAnalyzer, I will skip the introduction of this tool for simplicity.</p>
+              <p>If you want to know more about NaiveBayesAnalyzer or the comparison of SIA and TextBlob, you can check out this blog <a href="https://investigate.ai/investigating-sentiment-analysis/comparing-sentiment-analysis-tools/"><strong><em>Sentiment Analysis Tools</em></strong></a>, or take a close look at my <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/Sentiment_TextBlob.ipynb"><strong>Jupyter Notebook</strong></a>. I also find this YouTube video <a href="https://www.youtube.com/watch?v=o_OZdbCzHUA"><strong><em>Twitter Sentiment Analysis - Learn Python for Data Science</em></strong></a> very useful for beginners to conduct a code for sentiment analysis by using TextBlob.</p>
+              <p>&nbsp;</p>
+              <h4>Natural Language Toolkit (NLTK) – Hey, you can train algorithms with your own labeled dataset </h4>
+              <p>NLTK is so popular that I will skip some of its introduction in this review. Generally, NLTK is useful for both entry level and advanced level users. It provides all packages that could be useful for preprocessing text, such as Stopwords, tokenization, lemmatization, etc. Though these functions could also be replaced by modules in TextBlob or other NLP tools, NLTK for me is always the place to start with.</p>
+              <p>My NLTK approach could be broken down into two part: <strong>training and executing</strong>. In the first part, I used a preexisting data sample <em>Twitter_Sample</em> in NLTK library because we don&rsquo;t have enough time to label and create our own data sample for training and testing purposes. Usually, you would want to label your own samples so the NLTK model would be able to capture the contextual information in your dataset. However, my thought is that Twitter sample might be a good starting point for me to build a supervised model because I can easily test it on multiple datasets. The step-by-step illustration could be finding in my <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/Sentiment_NLTK.ipynb"><strong>Jupyter Notebook</strong></a></p>
+                <img class="rounded-md" src="../assets/img/thumb/crop4.png" alt="...">
+                <p>&nbsp;</p>
+              <p><strong>Strength</strong></p>
+              <p>The strength of this method is its flexibility and slightly higher accuracy. This time I received the highest accuracy among all supervised methods. All my supervised methods using either preexisting word libraries or preexisting labeled data samples to run the test models, so practically speaking their all need sample level of effort in conducting the sentiment analysis.</p>
+              <p>I got 65% for accuracy when I used preexisting data sample from NLTK, if you have the luxury to train the model with you own labeled data, I&rsquo;m sure you will receive a higher accuracy than mine.</p>
+              <p><strong>Weakness</strong></p>
+              <p>It&rsquo;s slightly more complicated as compared to SIA and TextBlob and may requires more skills to be able to digest it&rsquo;s code. If you decide to go with you own labeled dataset, you might need to label 1000-2500 pieces of text (for tweets) to get a reliable model.&nbsp;</p>
+              <p>My NLTK script was inspired by this reading <a href="https://www.digitalocean.com/community/tutorials/how-to-perform-sentiment-analysis-in-python-3-using-the-natural-language-toolkit-nltk"><strong><em>How To Perform Sentiment Analysis in Python 3 Using the Natural Language Toolkit (NLTK)</em></strong></a> by <a href="https://www.digitalocean.com/community/users/sdaityari"><strong>Shaumik Daityari</strong></a>, and you can also check out both my <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/Sentiment_NLTK.ipynb"><strong>step-by-step</strong></a> and <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/Sentiment_NLTK_cleaned.ipynb"><strong>cleaned</strong></a> versions of Jupyter Notebook scripts on GitHub.</p>              
+             
+              <p>&nbsp;</p>
+              <p>This article covers the review of three supervised methods in sentiment analysis. You can check out the reading of unsupervised method <strong>word2vec + K-means cluster</strong> at </p>
+              <p><a href="project_NLP2.html"><strong><em>Review: Four Sentiment Analysis Methods in Python (2)</em></strong></a></p>
+            
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../../index.html"><img src="../../assets/img/logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-twitter" href="https://twitter.com/JoyceOoops"><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" href="https://www.linkedin.com/in/joyce-yanru-jiang/"><i class="fa fa-linkedin"></i></a>
+        </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="../../theme/page/about-2.html">About</a>
+              <a class="nav-link" href="https://twitter.com/JoyceOoops">Twitter</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/joyce-yanru-jiang/">LinkedIn</a>
+              <a class="nav-link" href="../../theme/page/policy.html">Policy</a>
+              <a class="nav-link" href="../../theme/page/contact-1.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>

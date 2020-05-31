@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheSaaS — Single blog post</title>
+    <title>Sentiment NLTK cleaned</title>
 
     <!-- Styles -->
     <link href="../assets/css/page.min.css" rel="stylesheet">
@@ -20,316 +20,31 @@
   <body>
 
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="smart">
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
-          <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
-          <a class="navbar-brand" href="../index.html">
-            <img class="logo-dark" src="../assets/img/logo-dark.png" alt="logo">
-            <img class="logo-light" src="../assets/img/logo-light.png" alt="logo">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="../../index.html">
+            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
           </a>
         </div>
 
         <section class="navbar-mobile">
           <span class="navbar-divider d-mobile-none"></span>
 
-          <ul class="nav nav-navbar">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Demos <span class="arrow"></span></a>
-              <ul class="nav">
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SaaS <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../demo/saas-1.html">SaaS 1</a>
-                    <a class="nav-link" href="../demo/saas-2.html">SaaS 2</a>
-                    <a class="nav-link" href="../demo/saas-3.html">SaaS 3</a>
-                    <a class="nav-link" href="../demo/saas-4.html">SaaS 4</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Software <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../demo/software-1.html">Software 1</a>
-                    <a class="nav-link" href="../demo/software-2.html">Software 2</a>
-                    <a class="nav-link" href="../demo/software-3.html">Software 3</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">App <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../demo/app-finance.html">Finance</a>
-                    <a class="nav-link" href="../demo/app-social.html">Social</a>
-                    <a class="nav-link" href="../demo/app-taxi.html">Taxi</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Marketing <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../demo/marketing-1.html">Marketing 1</a>
-                    <a class="nav-link" href="../demo/marketing-2.html">Marketing 2</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Listing <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../demo/listing-1.html">Listing 1</a>
-                    <a class="nav-link" href="../demo/listing-2.html">Listing 2</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="../demo/finance-1.html">Finance</a>
-                </li>
-
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pages <span class="arrow"></span></a>
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../page/how-it-works.html">How it works</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="../page/pricing.html">Pricing</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../page/portfolio.html">Potfolio listing</a>
-                    <a class="nav-link" href="../page/portfolio-single.html">Potfolio single</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Careers <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../page/career.html">Careers listing</a>
-                    <a class="nav-link" href="../page/career-single.html">Careers single</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Service <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../page/service-1.html">Service 1</a>
-                    <a class="nav-link" href="../page/service-2.html">Service 2</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../page/about-1.html">About 1</a>
-                    <a class="nav-link" href="../page/about-2.html">About 2</a>
-                    <a class="nav-link" href="../page/about-3.html">About 3</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../page/contact-1.html">Contact 1</a>
-                    <a class="nav-link" href="../page/contact-2.html">Contact 2</a>
-                    <a class="nav-link" href="../page/contact-3.html">Contact 3</a>
-                  </nav>
-                </li>
-
-                <li class="nav-divider"></li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Extra <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../page/demo.html">Request demo</a>
-                    <a class="nav-link" href="../page/coming-soon.html">Coming soon</a>
-                    <a class="nav-link" href="../page/terms.html">Terms</a>
-                    <a class="nav-link" href="../page/error-404.html">Error 404</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">User <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../page/user-login.html">Login</a>
-                    <a class="nav-link" href="../page/user-register.html">Register</a>
-                    <a class="nav-link" href="../page/user-recover.html">Recover</a>
-                  </nav>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Docs <span class="arrow"></span></a>
-                  <nav class="nav">
-                    <a class="nav-link" href="../docs/index.html">Support center</a>
-                    <a class="nav-link" href="../docs/articles.html">Articles</a>
-                    <a class="nav-link" href="../docs/faq.html">FAQ</a>
-                  </nav>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Blog <span class="arrow"></span></a>
-              <nav class="nav">
-                <a class="nav-link" href="../blog/classic.html">Classic</a>
-                <a class="nav-link" href="../blog/grid.html">Grid</a>
-                <a class="nav-link" href="../blog/list.html">List</a>
-                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
-                <div class="nav-divider"></div>
-                <a class="nav-link" href="../blog/post-1.html">Post 1</a>
-                <a class="nav-link active" href="../blog/post-2.html">Post 2</a>
-              </nav>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shop <span class="arrow"></span></a>
-              <nav class="nav">
-                <a class="nav-link" href="../shop/list.html">List</a>
-                <a class="nav-link" href="../shop/item.html">Item</a>
-                <a class="nav-link" href="../shop/cart.html">Cart</a>
-                <a class="nav-link" href="../shop/checkout.html">Checkout</a>
-              </nav>
-            </li>
-
-            <li class="nav-item nav-mega">
-              <a class="nav-link" href="#">Blocks <span class="arrow"></span></a>
-              <nav class="nav px-lg-2 py-lg-4">
-                <div class="container-fluid">
-                  <div class="row">
-
-                    <div class="col-lg">
-                      <nav class="nav flex-column">
-                        <a class="nav-link" href="../block/blog.html">Blog</a>
-                        <a class="nav-link" href="../block/career.html">Career</a>
-                        <a class="nav-link" href="../block/contact.html">Contact</a>
-                        <a class="nav-link" href="../block/content.html">Content</a>
-                        <a class="nav-link" href="../block/counter.html">Counter</a>
-                        <a class="nav-link" href="../block/cover.html">Cover</a>
-                        <a class="nav-link" href="../block/cta.html">Call to action</a>
-                        <a class="nav-link" href="../block/download.html">Download</a>
-                        <a class="nav-link" href="../block/explore.html">Explore</a>
-                        <a class="nav-link" href="../block/faq.html">FAQ</a>
-                      </nav>
-                    </div>
-
-                    <div class="col-lg">
-                      <nav class="nav flex-column">
-                        <a class="nav-link" href="../block/feature-text.html">Feature textual</a>
-                        <a class="nav-link" href="../block/feature.html">Feature</a>
-                        <a class="nav-link" href="../block/footer.html">Footer</a>
-                        <a class="nav-link" href="../block/gallery.html">Gallery</a>
-                        <a class="nav-link" href="../block/header.html">Header</a>
-                        <a class="nav-link" href="../block/map.html">Map</a>
-                        <a class="nav-link" href="../block/modal.html">Modal</a>
-                        <a class="nav-link" href="../block/offcanvas.html">Offcanvas</a>
-                        <a class="nav-link" href="../block/partner.html">Partner</a>
-                        <a class="nav-link" href="../block/popup.html">Popup</a>
-                      </nav>
-                    </div>
-
-                    <div class="col-lg">
-                      <nav class="nav flex-column">
-                        <a class="nav-link" href="../block/portfolio.html">Portfolio</a>
-                        <a class="nav-link" href="../block/pricing.html">Pricing</a>
-                        <a class="nav-link" href="../block/process.html">Process</a>
-                        <a class="nav-link" href="../block/service.html">Service</a>
-                        <a class="nav-link" href="../block/shop.html">Shop</a>
-                        <a class="nav-link" href="../block/signup.html">Signup</a>
-                        <a class="nav-link" href="../block/subscribe.html">Subscribe</a>
-                        <a class="nav-link" href="../block/team.html">Team</a>
-                        <a class="nav-link" href="../block/testimonial.html">Testimonial</a>
-                        <a class="nav-link" href="../block/video.html">Video</a>
-                      </nav>
-                    </div>
-
-                  </div>
-                </div>
-              </nav>
-            </li>
-
-            <li class="nav-item nav-mega">
-              <a class="nav-link" href="#">UI Kit <span class="arrow"></span></a>
-              <nav class="nav px-lg-2 py-lg-4">
-                <div class="container-fluid">
-                  <div class="row">
-
-                    <div class="col-lg-3">
-                      <nav class="nav flex-column">
-                        <a class="nav-link" href="../uikit/accordion.html">Accordion</a>
-                        <a class="nav-link" href="../uikit/alert.html">Alert</a>
-                        <a class="nav-link" href="../uikit/badge.html">Badge</a>
-                        <a class="nav-link" href="../uikit/button.html">Button</a>
-                        <a class="nav-link" href="../uikit/card.html">Card</a>
-                        <a class="nav-link" href="../uikit/color.html">Colors</a>
-                        <a class="nav-link" href="../uikit/constellation.html">Constellation</a>
-                        <a class="nav-link" href="../uikit/content.html">Content</a>
-                        <a class="nav-link" href="../uikit/countdown.html">Count down</a>
-                        <a class="nav-link" href="../uikit/countup.html">Count up</a>
-                      </nav>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <nav class="nav flex-column">
-                        <a class="nav-link" href="../uikit/dropdown.html">Dropdown</a>
-                        <a class="nav-link" href="../uikit/form.html">Form</a>
-                        <a class="nav-link" href="../uikit/gallery.html">Gallery</a>
-                        <a class="nav-link" href="../uikit/granim.html">Granim</a>
-                        <a class="nav-link" href="../uikit/icon.html">Icon</a>
-                        <a class="nav-link" href="../uikit/image.html">Image</a>
-                        <a class="nav-link" href="../uikit/lightbox.html">Lightbox</a>
-                        <a class="nav-link" href="../uikit/map.html">Map</a>
-                        <a class="nav-link" href="../uikit/misc.html">Miscellaneous</a>
-                        <a class="nav-link" href="../uikit/modal.html">Modal</a>
-                      </nav>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <nav class="nav flex-column">
-                        <a class="nav-link" href="../uikit/nav.html">Nav</a>
-                        <a class="nav-link" href="../uikit/navbar.html">Navbar</a>
-                        <a class="nav-link" href="../uikit/offcanvas.html">Offcanvas</a>
-                        <a class="nav-link" href="../uikit/overlay.html">Overlay</a>
-                        <a class="nav-link" href="../uikit/popup.html">Popup</a>
-                        <a class="nav-link" href="../uikit/pricing.html">Pricing</a>
-                        <a class="nav-link" href="../uikit/process.html">Process</a>
-                        <a class="nav-link" href="../uikit/progress.html">Progress</a>
-                        <a class="nav-link" href="../uikit/scroll.html">Scroll</a>
-                        <a class="nav-link" href="../uikit/section.html">Section</a>
-                      </nav>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <nav class="nav flex-column">
-                        <a class="nav-link" href="../uikit/shuffle.html">Shuffle</a>
-                        <a class="nav-link" href="../uikit/slider.html">Slider</a>
-                        <a class="nav-link" href="../uikit/social.html">Social</a>
-                        <a class="nav-link" href="../uikit/tab.html">Tab</a>
-                        <a class="nav-link" href="../uikit/table.html">Table</a>
-                        <a class="nav-link" href="../uikit/topbar.html">Topbar</a>
-                        <a class="nav-link" href="../uikit/typing.html">Typing</a>
-                        <a class="nav-link" href="../uikit/typography.html">Typography</a>
-                        <a class="nav-link" href="../uikit/utility.html">Utility</a>
-                        <a class="nav-link" href="../uikit/video.html">Video</a>
-                      </nav>
-                    </div>
-
-                  </div>
-                </div>
-              </nav>
-            </li>
-
-          </ul>
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="../../theme/page/about-2.html" style="color:black">About Me</a>
+            <a class="nav-link" href="../../theme/blog/research.html" style="color:black">Research</a>
+            <a class="nav-link" href="../../theme/blog/project.html" style="color:black">Project</a>
+            <a class="nav-link" href="../../theme/blog/data.html" style="color:black">Data Analytics</a>
+            <a class="nav-link" href="../../theme/page/contact-1.html" style="color:black">Contact</a>
+          </nav>
         </section>
 
-        <a class="btn btn-xs btn-round btn-success" href="https://themeforest.net/item/thesaas-responsive-bootstrap-saas-software-webapp-template/19778599?license=regular&open_purchase_for_item_id=19778599&purchasable=source&ref=thethemeio">Buy Now</a>
+        <a class="btn btn-sm btn-round btn-dark" href="../../theme/page/about-2.html">About Me</a>
 
       </div>
     </nav><!-- /.navbar -->
@@ -344,7 +59,7 @@
       | Blog content
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <title>Sentiment_NLTK</title>
+      <title>Sentiment_NLTK_cleaned</title>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13432,302 +13147,47 @@
       <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
       </div><div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h1 id="Sentiment-Analysis-by-Pre-developed-Twitter-Library----Natural-Language-Toolkit-(NLTK)----Step-by-Step">Sentiment Analysis by Pre-developed Twitter Library -- Natural Language Toolkit (NLTK) -- Step by Step<a class="anchor-link" href="#Sentiment-Analysis-by-Pre-developed-Twitter-Library----Natural-Language-Toolkit-(NLTK)----Step-by-Step">&#182;</a></h1>
+      <h1 id="Sentiment-Analysis-by-Pre-developed-Twitter-Library----Natural-Language-Toolkit-(NLTK)---with-imported-data">Sentiment Analysis by Pre-developed Twitter Library -- Natural Language Toolkit (NLTK) --with imported data<a class="anchor-link" href="#Sentiment-Analysis-by-Pre-developed-Twitter-Library----Natural-Language-Toolkit-(NLTK)---with-imported-data">&#182;</a></h1>
       </div>
       </div>
       </div>
       <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
       </div><div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="By-Joyce-Jiang-|-Code-by-Joyce&#182;">By Joyce Jiang | Code by Joyce&#182;<a class="anchor-link" href="#By-Joyce-Jiang-|-Code-by-Joyce&#182;">&#182;</a></h4>
+      <h4 id="By-Joyce-Jiang-|-Code-by-Joyce">By Joyce Jiang | Code by Joyce<a class="anchor-link" href="#By-Joyce-Jiang-|-Code-by-Joyce">&#182;</a></h4>
       </div>
       </div>
       </div>
       <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
       </div><div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h3 id="Citation-&amp;-Source-of-my-code">Citation &amp; Source of my code<a class="anchor-link" href="#Citation-&amp;-Source-of-my-code">&#182;</a></h3><p>Declare: My code is almost fully adapted from Shaumik Daityari's tutorial on Digital Ocean Community "How To Perform Sentiment Analysis in Python 3 Using the Natural Language Toolkit (NLTK)", you can check it out at <a href="https://www.digitalocean.com/community/tutorials/how-to-perform-sentiment-analysis-in-python-3-using-the-natural-language-toolkit-nltk">https://www.digitalocean.com/community/tutorials/how-to-perform-sentiment-analysis-in-python-3-using-the-natural-language-toolkit-nltk</a>.</p>
-      <p>Thanks Shaumik for explaining in a digestible way for me to understand fully how powerful NLTK is for a supervised NLP. This script is published for study and research exploration purpose only, and it would not be used for any commercial purpose.</p>
+      <h3 id="Citation-&amp;-Source-of-my-code">Citation &amp; Source of my code<a class="anchor-link" href="#Citation-&amp;-Source-of-my-code">&#182;</a></h3><p>Declare: The first part of my code is almost fully adapted from Shaumik Daityari's tutorial on Digital Ocean Community "How To Perform Sentiment Analysis in Python 3 Using the Natural Language Toolkit (NLTK)", you can check it out at <a href="https://www.digitalocean.com/community/tutorials/how-to-perform-sentiment-analysis-in-python-3-using-the-natural-language-toolkit-nltk">https://www.digitalocean.com/community/tutorials/how-to-perform-sentiment-analysis-in-python-3-using-the-natural-language-toolkit-nltk</a>.
+      Thanks Shaumik for explaining in a digestible way for me to understand fully how powerful NLTK is for a supervised NLP. This script is published for study and research exploration purpose only, and it would not be used for any commercial purpose.</p>
       
       </div>
       </div>
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[2]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
-      <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-      <span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">DataFrame</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[3]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
-      <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
-      <span class="kn">import</span> <span class="nn">re</span>
-      <span class="kn">import</span> <span class="nn">string</span>
-      
-      <span class="kn">import</span> <span class="nn">nltk</span>
-      <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
-      <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;wordnet&#39;</span><span class="p">)</span>
-      <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;averaged_perceptron_tagger&#39;</span><span class="p">)</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt"></div>
-      
-      
-      <div class="output_subarea output_stream output_stderr output_text">
-      <pre>[nltk_data] Downloading package stopwords to
-      [nltk_data]     C:\Users\Joyce\AppData\Roaming\nltk_data...
-      [nltk_data]   Package stopwords is already up-to-date!
-      [nltk_data] Downloading package wordnet to
-      [nltk_data]     C:\Users\Joyce\AppData\Roaming\nltk_data...
-      [nltk_data]   Package wordnet is already up-to-date!
-      [nltk_data] Downloading package averaged_perceptron_tagger to
-      [nltk_data]     C:\Users\Joyce\AppData\Roaming\nltk_data...
-      [nltk_data]   Package averaged_perceptron_tagger is already up-to-
-      [nltk_data]       date!
-      </pre>
-      </div>
-      </div>
-      
-      <div class="output_area">
-      
-          <div class="prompt output_prompt">Out[3]:</div>
-      
-      
-      
-      
-      <div class="output_text output_subarea output_execute_result">
-      <pre>True</pre>
-      </div>
-      
-      </div>
-      
-      </div>
-      </div>
-      
       </div>
       <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
       </div><div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h3 id="Pre-training-the-algorithm-by-using-pre-existing-dataset-&quot;twitter_samples&quot;-in-the-nltk-library">Pre-training the algorithm by using pre-existing dataset "twitter_samples" in the nltk library<a class="anchor-link" href="#Pre-training-the-algorithm-by-using-pre-existing-dataset-&quot;twitter_samples&quot;-in-the-nltk-library">&#182;</a></h3>
+      <h3 id="Define-a-Function-to-prerpocess-the-text-(Twitter-Samples)">Define a Function to prerpocess the text (Twitter Samples)<a class="anchor-link" href="#Define-a-Function-to-prerpocess-the-text-(Twitter-Samples)">&#182;</a></h3>
       </div>
       </div>
       </div>
       <div class="cell border-box-sizing code_cell rendered">
       <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[4]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">twitter_samples</span>
-      <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;twitter_samples&#39;</span><span class="p">)</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt"></div>
-      
-      
-      <div class="output_subarea output_stream output_stderr output_text">
-      <pre>[nltk_data] Downloading package twitter_samples to
-      [nltk_data]     C:\Users\Joyce\AppData\Roaming\nltk_data...
-      [nltk_data]   Package twitter_samples is already up-to-date!
-      </pre>
-      </div>
-      </div>
-      
-      <div class="output_area">
-      
-          <div class="prompt output_prompt">Out[4]:</div>
-      
-      
-      
-      
-      <div class="output_text output_subarea output_execute_result">
-      <pre>True</pre>
-      </div>
-      
-      </div>
-      
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-      </div><div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="Word-Tokenization">Word Tokenization<a class="anchor-link" href="#Word-Tokenization">&#182;</a></h4>
-      </div>
-      </div>
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[5]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Divided into positive and negative twitter samples </span>
-      
-      <span class="n">positive_tweets</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">strings</span><span class="p">(</span><span class="s1">&#39;positive_tweets.json&#39;</span><span class="p">)</span>
-      <span class="n">negative_tweets</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">strings</span><span class="p">(</span><span class="s1">&#39;negative_tweets.json&#39;</span><span class="p">)</span>
-      <span class="n">text</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">strings</span><span class="p">(</span><span class="s1">&#39;tweets.20150430-223406.json&#39;</span><span class="p">)</span>
-      <span class="n">tweet_tokens</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">tokenized</span><span class="p">(</span><span class="s1">&#39;positive_tweets.json&#39;</span><span class="p">)</span>
-      
-      <span class="nb">print</span><span class="p">(</span><span class="n">tweet_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt"></div>
-      
-      
-      <div class="output_subarea output_stream output_stdout output_text">
-      <pre>[&#39;#FollowFriday&#39;, &#39;@France_Inte&#39;, &#39;@PKuchly57&#39;, &#39;@Milipol_Paris&#39;, &#39;for&#39;, &#39;being&#39;, &#39;top&#39;, &#39;engaged&#39;, &#39;members&#39;, &#39;in&#39;, &#39;my&#39;, &#39;community&#39;, &#39;this&#39;, &#39;week&#39;, &#39;:)&#39;]
-      </pre>
-      </div>
-      </div>
-      
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[6]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.tag</span> <span class="kn">import</span> <span class="n">pos_tag</span>
-      
-      <span class="n">tweet_tokens</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">tokenized</span><span class="p">(</span><span class="s1">&#39;positive_tweets.json&#39;</span><span class="p">)</span>
-      <span class="nb">print</span><span class="p">(</span><span class="n">pos_tag</span><span class="p">(</span><span class="n">tweet_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt"></div>
-      
-      
-      <div class="output_subarea output_stream output_stdout output_text">
-      <pre>[(&#39;#FollowFriday&#39;, &#39;JJ&#39;), (&#39;@France_Inte&#39;, &#39;NNP&#39;), (&#39;@PKuchly57&#39;, &#39;NNP&#39;), (&#39;@Milipol_Paris&#39;, &#39;NNP&#39;), (&#39;for&#39;, &#39;IN&#39;), (&#39;being&#39;, &#39;VBG&#39;), (&#39;top&#39;, &#39;JJ&#39;), (&#39;engaged&#39;, &#39;VBN&#39;), (&#39;members&#39;, &#39;NNS&#39;), (&#39;in&#39;, &#39;IN&#39;), (&#39;my&#39;, &#39;PRP$&#39;), (&#39;community&#39;, &#39;NN&#39;), (&#39;this&#39;, &#39;DT&#39;), (&#39;week&#39;, &#39;NN&#39;), (&#39;:)&#39;, &#39;NN&#39;)]
-      </pre>
-      </div>
-      </div>
-      
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-      </div><div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="Word-Lemmatization">Word Lemmatization<a class="anchor-link" href="#Word-Lemmatization">&#182;</a></h4>
-      </div>
-      </div>
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[7]:</div>
+      <div class="prompt input_prompt">In&nbsp;[1]:</div>
       <div class="inner_cell">
           <div class="input_area">
       <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.stem.wordnet</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
+      <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">twitter_samples</span><span class="p">,</span> <span class="n">stopwords</span>
+      <span class="kn">from</span> <span class="nn">nltk.tag</span> <span class="kn">import</span> <span class="n">pos_tag</span>
+      <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
+      <span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">FreqDist</span><span class="p">,</span> <span class="n">classify</span><span class="p">,</span> <span class="n">NaiveBayesClassifier</span>
       
-      <span class="k">def</span> <span class="nf">lemmatize_sentence</span><span class="p">(</span><span class="n">tokens</span><span class="p">):</span>
-          <span class="n">lemmatizer</span> <span class="o">=</span> <span class="n">WordNetLemmatizer</span><span class="p">()</span>
-          <span class="n">lemmatized_sentence</span> <span class="o">=</span> <span class="p">[]</span>
-          <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">pos_tag</span><span class="p">(</span><span class="n">tokens</span><span class="p">):</span>
-              <span class="k">if</span> <span class="n">tag</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;NN&#39;</span><span class="p">):</span>
-                  <span class="n">pos</span> <span class="o">=</span> <span class="s1">&#39;n&#39;</span>
-              <span class="k">elif</span> <span class="n">tag</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;VB&#39;</span><span class="p">):</span>
-                  <span class="n">pos</span> <span class="o">=</span> <span class="s1">&#39;v&#39;</span>
-              <span class="k">else</span><span class="p">:</span>
-                  <span class="n">pos</span> <span class="o">=</span> <span class="s1">&#39;a&#39;</span>
-              <span class="n">lemmatized_sentence</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">pos</span><span class="p">))</span>
-          <span class="k">return</span> <span class="n">lemmatized_sentence</span>
+      <span class="kn">import</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">string</span><span class="o">,</span> <span class="nn">random</span>
       
-      <span class="nb">print</span><span class="p">(</span><span class="n">lemmatize_sentence</span><span class="p">(</span><span class="n">tweet_tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt"></div>
-      
-      
-      <div class="output_subarea output_stream output_stdout output_text">
-      <pre>[&#39;#FollowFriday&#39;, &#39;@France_Inte&#39;, &#39;@PKuchly57&#39;, &#39;@Milipol_Paris&#39;, &#39;for&#39;, &#39;be&#39;, &#39;top&#39;, &#39;engage&#39;, &#39;member&#39;, &#39;in&#39;, &#39;my&#39;, &#39;community&#39;, &#39;this&#39;, &#39;week&#39;, &#39;:)&#39;]
-      </pre>
-      </div>
-      </div>
-      
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-      </div><div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="*The-lemmatization-is-completed-by-the-new-remove_noise-function.">*The lemmatization is completed by the new remove_noise function.<a class="anchor-link" href="#*The-lemmatization-is-completed-by-the-new-remove_noise-function.">&#182;</a></h4><p>We are not going to use this function in our script</p>
-      
-      </div>
-      </div>
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[8]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">remove_noise</span><span class="p">(</span><span class="n">tweet_tokens</span><span class="p">,</span> <span class="n">stop_words</span> <span class="o">=</span> <span class="p">()):</span>
+      <span class="k">def</span> <span class="nf">remove_noise</span><span class="p">(</span><span class="n">tweet_tokens</span><span class="p">,</span> <span class="n">stop_words</span> <span class="o">=</span> <span class="p">()):</span>
       
           <span class="n">cleaned_tokens</span> <span class="o">=</span> <span class="p">[]</span>
       
@@ -13749,127 +13209,18 @@
               <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">token</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span> <span class="ow">and</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">:</span>
                   <span class="n">cleaned_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
           <span class="k">return</span> <span class="n">cleaned_tokens</span>
-      </pre></div>
       
-          </div>
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-      </div><div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="Use-Stopwords-function-from-NLTK-to-clean-the-text">Use Stopwords function from NLTK to clean the text<a class="anchor-link" href="#Use-Stopwords-function-from-NLTK-to-clean-the-text">&#182;</a></h4>
-      </div>
-      </div>
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[9]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stop_words</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
-      
-      <span class="c1">#print(remove_noise(tweet_tokens[0], stop_words))</span>
-      
-      <span class="n">positive_tweet_tokens</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">tokenized</span><span class="p">(</span><span class="s1">&#39;positive_tweets.json&#39;</span><span class="p">)</span>
-      <span class="n">negative_tweet_tokens</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">tokenized</span><span class="p">(</span><span class="s1">&#39;negative_tweets.json&#39;</span><span class="p">)</span>
-      
-      <span class="n">positive_cleaned_tokens_list</span> <span class="o">=</span> <span class="p">[]</span>
-      <span class="n">negative_cleaned_tokens_list</span> <span class="o">=</span> <span class="p">[]</span>
-      
-      <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">positive_tweet_tokens</span><span class="p">:</span>
-          <span class="n">positive_cleaned_tokens_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">remove_noise</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">))</span>
-      
-      <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">negative_tweet_tokens</span><span class="p">:</span>
-          <span class="n">negative_cleaned_tokens_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">remove_noise</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">))</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[10]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">positive_tweet_tokens</span><span class="p">[</span><span class="mi">500</span><span class="p">])</span>
-      <span class="nb">print</span><span class="p">(</span><span class="n">positive_cleaned_tokens_list</span><span class="p">[</span><span class="mi">500</span><span class="p">])</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt"></div>
-      
-      
-      <div class="output_subarea output_stream output_stdout output_text">
-      <pre>[&#39;Dang&#39;, &#39;that&#39;, &#39;is&#39;, &#39;some&#39;, &#39;rad&#39;, &#39;@AbzuGame&#39;, &#39;#fanart&#39;, &#39;!&#39;, &#39;:D&#39;, &#39;https://t.co/bI8k8tb9ht&#39;]
-      [&#39;dang&#39;, &#39;rad&#39;, &#39;#fanart&#39;, &#39;:d&#39;]
-      </pre>
-      </div>
-      </div>
-      
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[11]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_all_words</span><span class="p">(</span><span class="n">cleaned_tokens_list</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">get_all_words</span><span class="p">(</span><span class="n">cleaned_tokens_list</span><span class="p">):</span>
           <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">cleaned_tokens_list</span><span class="p">:</span>
               <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">:</span>
                   <span class="k">yield</span> <span class="n">token</span>
       
-      <span class="n">all_pos_words</span> <span class="o">=</span> <span class="n">get_all_words</span><span class="p">(</span><span class="n">positive_cleaned_tokens_list</span><span class="p">)</span>
+      <span class="k">def</span> <span class="nf">get_tweets_for_model</span><span class="p">(</span><span class="n">cleaned_tokens_list</span><span class="p">):</span>
+          <span class="k">for</span> <span class="n">tweet_tokens</span> <span class="ow">in</span> <span class="n">cleaned_tokens_list</span><span class="p">:</span>
+              <span class="k">yield</span> <span class="nb">dict</span><span class="p">([</span><span class="n">token</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tweet_tokens</span><span class="p">)</span>
       </pre></div>
       
           </div>
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-      <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[12]:</div>
-      <div class="inner_cell">
-          <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">positive_cleaned_tokens_list</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span>
-      </pre></div>
-      
-          </div>
-      </div>
-      </div>
-      
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt output_prompt">Out[12]:</div>
-      
-      
-      
-      
-      <div class="output_text output_subarea output_execute_result">
-      <pre>[&#39;dang&#39;, &#39;rad&#39;, &#39;#fanart&#39;, &#39;:d&#39;]</pre>
-      </div>
-      
-      </div>
-      
       </div>
       </div>
       
@@ -13877,19 +13228,68 @@
       <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
       </div><div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="Show-the-most-frequent-positive-word">Show the most frequent positive word<a class="anchor-link" href="#Show-the-most-frequent-positive-word">&#182;</a></h4>
+      <h2 id="Train-NLTK-algorithm-and-test-accuracy">Train NLTK algorithm and test accuracy<a class="anchor-link" href="#Train-NLTK-algorithm-and-test-accuracy">&#182;</a></h2>
       </div>
       </div>
       </div>
       <div class="cell border-box-sizing code_cell rendered">
       <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[13]:</div>
+      <div class="prompt input_prompt">In&nbsp;[2]:</div>
       <div class="inner_cell">
           <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">FreqDist</span>
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
       
-      <span class="n">freq_dist_pos</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">(</span><span class="n">all_pos_words</span><span class="p">)</span>
-      <span class="nb">print</span><span class="p">(</span><span class="n">freq_dist_pos</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+          <span class="n">positive_tweets</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">strings</span><span class="p">(</span><span class="s1">&#39;positive_tweets.json&#39;</span><span class="p">)</span>
+          <span class="n">negative_tweets</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">strings</span><span class="p">(</span><span class="s1">&#39;negative_tweets.json&#39;</span><span class="p">)</span>
+          <span class="n">text</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">strings</span><span class="p">(</span><span class="s1">&#39;tweets.20150430-223406.json&#39;</span><span class="p">)</span>
+          <span class="n">tweet_tokens</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">tokenized</span><span class="p">(</span><span class="s1">&#39;positive_tweets.json&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+      
+          <span class="n">stop_words</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+      
+          <span class="n">positive_tweet_tokens</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">tokenized</span><span class="p">(</span><span class="s1">&#39;positive_tweets.json&#39;</span><span class="p">)</span>
+          <span class="n">negative_tweet_tokens</span> <span class="o">=</span> <span class="n">twitter_samples</span><span class="o">.</span><span class="n">tokenized</span><span class="p">(</span><span class="s1">&#39;negative_tweets.json&#39;</span><span class="p">)</span>
+      
+          <span class="n">positive_cleaned_tokens_list</span> <span class="o">=</span> <span class="p">[]</span>
+          <span class="n">negative_cleaned_tokens_list</span> <span class="o">=</span> <span class="p">[]</span>
+      
+          <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">positive_tweet_tokens</span><span class="p">:</span>
+              <span class="n">positive_cleaned_tokens_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">remove_noise</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">))</span>
+      
+          <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">negative_tweet_tokens</span><span class="p">:</span>
+              <span class="n">negative_cleaned_tokens_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">remove_noise</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">))</span>
+      
+          <span class="n">all_pos_words</span> <span class="o">=</span> <span class="n">get_all_words</span><span class="p">(</span><span class="n">positive_cleaned_tokens_list</span><span class="p">)</span>
+      
+          <span class="n">freq_dist_pos</span> <span class="o">=</span> <span class="n">FreqDist</span><span class="p">(</span><span class="n">all_pos_words</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="n">freq_dist_pos</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+      
+          <span class="n">positive_tokens_for_model</span> <span class="o">=</span> <span class="n">get_tweets_for_model</span><span class="p">(</span><span class="n">positive_cleaned_tokens_list</span><span class="p">)</span>
+          <span class="n">negative_tokens_for_model</span> <span class="o">=</span> <span class="n">get_tweets_for_model</span><span class="p">(</span><span class="n">negative_cleaned_tokens_list</span><span class="p">)</span>
+      
+          <span class="n">positive_dataset</span> <span class="o">=</span> <span class="p">[(</span><span class="n">tweet_dict</span><span class="p">,</span> <span class="s2">&quot;Positive&quot;</span><span class="p">)</span>
+                               <span class="k">for</span> <span class="n">tweet_dict</span> <span class="ow">in</span> <span class="n">positive_tokens_for_model</span><span class="p">]</span>
+      
+          <span class="n">negative_dataset</span> <span class="o">=</span> <span class="p">[(</span><span class="n">tweet_dict</span><span class="p">,</span> <span class="s2">&quot;Negative&quot;</span><span class="p">)</span>
+                               <span class="k">for</span> <span class="n">tweet_dict</span> <span class="ow">in</span> <span class="n">negative_tokens_for_model</span><span class="p">]</span>
+      
+          <span class="n">dataset</span> <span class="o">=</span> <span class="n">positive_dataset</span> <span class="o">+</span> <span class="n">negative_dataset</span>
+      
+          <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+      
+          <span class="n">train_data</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[:</span><span class="mi">7000</span><span class="p">]</span>
+          <span class="n">test_data</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="mi">7000</span><span class="p">:]</span>
+      
+          <span class="n">classifier</span> <span class="o">=</span> <span class="n">NaiveBayesClassifier</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
+      
+          <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy is:&quot;</span><span class="p">,</span> <span class="n">classify</span><span class="o">.</span><span class="n">accuracy</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">test_data</span><span class="p">))</span>
+      
+          <span class="nb">print</span><span class="p">(</span><span class="n">classifier</span><span class="o">.</span><span class="n">show_most_informative_features</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+      
+          <span class="n">custom_tweet</span> <span class="o">=</span> <span class="s2">&quot;I ordered just once from TerribleCo, they screwed up, never used the app again.&quot;</span>
+      
+          <span class="n">custom_tokens</span> <span class="o">=</span> <span class="n">remove_noise</span><span class="p">(</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">custom_tweet</span><span class="p">))</span>
+      
+          <span class="nb">print</span><span class="p">(</span><span class="n">custom_tweet</span><span class="p">,</span> <span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">(</span><span class="nb">dict</span><span class="p">([</span><span class="n">token</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">custom_tokens</span><span class="p">)))</span>
       </pre></div>
       
           </div>
@@ -13907,10 +13307,932 @@
       
       <div class="output_subarea output_stream output_stdout output_text">
       <pre>[(&#39;:)&#39;, 3691), (&#39;:-)&#39;, 701), (&#39;:d&#39;, 658), (&#39;thanks&#39;, 388), (&#39;follow&#39;, 357), (&#39;love&#39;, 333), (&#39;...&#39;, 290), (&#39;good&#39;, 283), (&#39;get&#39;, 263), (&#39;thank&#39;, 253)]
+      Accuracy is: 0.995
+      Most Informative Features
+                            :( = True           Negati : Positi =   2045.1 : 1.0
+                            :) = True           Positi : Negati =   1002.4 : 1.0
+                           bam = True           Positi : Negati =     21.8 : 1.0
+                           sad = True           Negati : Positi =     18.0 : 1.0
+                      follower = True           Positi : Negati =     17.1 : 1.0
+                          blog = True           Positi : Negati =     17.1 : 1.0
+                     community = True           Positi : Negati =     16.5 : 1.0
+                      followed = True           Negati : Positi =     15.7 : 1.0
+                            aw = True           Negati : Positi =     14.9 : 1.0
+                        arrive = True           Positi : Negati =     14.3 : 1.0
+      None
+      I ordered just once from TerribleCo, they screwed up, never used the app again. Negative
       </pre>
       </div>
       </div>
       
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[3]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">(</span><span class="nb">dict</span><span class="p">([</span><span class="n">token</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">custom_tokens</span><span class="p">))</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      <div class="output_wrapper">
+      <div class="output">
+      
+      
+      <div class="output_area">
+      
+          <div class="prompt output_prompt">Out[3]:</div>
+      
+      
+      
+      
+      <div class="output_text output_subarea output_execute_result">
+      <pre>&#39;Negative&#39;</pre>
+      </div>
+      
+      </div>
+      
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+      </div><div class="inner_cell">
+      <div class="text_cell_render border-box-sizing rendered_html">
+      <h1 id="Import-Dataset">Import Dataset<a class="anchor-link" href="#Import-Dataset">&#182;</a></h1>
+      </div>
+      </div>
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[4]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+      <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+      <span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">DataFrame</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[5]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;Labeled/Covid19UG_NoDuplicates23_05_20_labeled.xlsx&#39;</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+      <span class="c1">#df= pd.read_excel(&#39;Labeled/Tweet_Museveni_Sentiment_Labeled_D1.xlsx&#39;,index=False)</span>
+      
+      <span class="n">df</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      <div class="output_wrapper">
+      <div class="output">
+      
+      
+      <div class="output_area">
+      
+          <div class="prompt output_prompt">Out[5]:</div>
+      
+      
+      
+      <div class="output_html rendered_html output_subarea output_execute_result">
+      <div>
+      <style scoped>
+          .dataframe tbody tr th:only-of-type {
+              vertical-align: middle;
+          }
+      
+          .dataframe tbody tr th {
+              vertical-align: top;
+          }
+      
+          .dataframe thead th {
+              text-align: right;
+          }
+      </style>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Unnamed: 0</th>
+            <th>Row ID</th>
+            <th>Tweet ID</th>
+            <th>Username</th>
+            <th>Tweet</th>
+            <th>Time</th>
+            <th>Tweet Type</th>
+            <th>Retweeted By</th>
+            <th>Number of Retweets</th>
+            <th>Hashtags</th>
+            <th>Mentions</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Web</th>
+            <th>Bio</th>
+            <th>Number of Tweets</th>
+            <th>Number of Followers</th>
+            <th>Number Following</th>
+            <th>Location Coordinates</th>
+            <th>SENTIMENT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>0</td>
+            <td>1</td>
+            <td>1263678902041526016</td>
+            <td>AhmadiyyaUg</td>
+            <td>His excellency president #Uganda @KagutaMuseve...</td>
+            <td>5/21/2020 8:51:42 PM</td>
+            <td>Retweet</td>
+            <td>AhmadiyyaKings1</td>
+            <td>4</td>
+            <td>Uganda Ahmadiyya COVID19UG</td>
+            <td>KagutaMuseveni HumanityFirstUK UgHumanityfirst...</td>
+            <td>AhmadiyyaUganda</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>Official Twitter Handle of Uganda Ahmadiyya Mu...</td>
+            <td>110</td>
+            <td>155</td>
+            <td>438</td>
+            <td>NaN</td>
+            <td>1.0</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>1</td>
+            <td>4</td>
+            <td>1263678714124153088</td>
+            <td>NansinguzaJ</td>
+            <td>@Katabasasa @nbstv #NBSFrontline #NBSUpdates\n...</td>
+            <td>5/21/2020 8:50:58 PM</td>
+            <td>Tweet</td>
+            <td>NaN</td>
+            <td>0</td>
+            <td>NBSFrontline NBSUpdates COVID19UG Covid_19</td>
+            <td>Katabasasa nbstv</td>
+            <td>Nansinguza Jacob</td>
+            <td>Uganda</td>
+            <td>https://t.co/8zcFVolmZH</td>
+            <td>#VisualCommunication #MedicaIillustration &amp; #E...</td>
+            <td>38917</td>
+            <td>3300</td>
+            <td>4103</td>
+            <td>+01.25+032.5/</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>2</td>
+            <td>7</td>
+            <td>1263677791222074880</td>
+            <td>SolomonMGrace2</td>
+            <td>Mr. ERIAS Lukwago should know that SOPs are in...</td>
+            <td>5/21/2020 8:47:18 PM</td>
+            <td>Retweet</td>
+            <td>kugonza6</td>
+            <td>1</td>
+            <td>NaN</td>
+            <td>JudiciaryUG peter_katwesige OfwonoOpondo</td>
+            <td>Male Solomon Grace</td>
+            <td>Kampala, Uganda</td>
+            <td>https://t.co/CUY7tvkw87</td>
+            <td>Public Administrator, Policy Researcher and An...</td>
+            <td>8851</td>
+            <td>1246</td>
+            <td>5009</td>
+            <td>+00.31628+032.58219/</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>3</td>
+            <td>8</td>
+            <td>1263676429994254080</td>
+            <td>Cotildakhainza</td>
+            <td>Energy Minister @DrKitutu hands over the Ugx.2...</td>
+            <td>5/21/2020 8:41:53 PM</td>
+            <td>Retweet</td>
+            <td>h_ssali</td>
+            <td>18</td>
+            <td>COVID19UG</td>
+            <td>DrKitutu Parliament_Ug</td>
+            <td>Psycho</td>
+            <td>Kampala, Uganda</td>
+            <td>NaN</td>
+            <td>Student of MAKERERE University Kampala. PURSUI...</td>
+            <td>1636</td>
+            <td>1341</td>
+            <td>1206</td>
+            <td>+00.31628+032.58219/</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>4</td>
+            <td>9</td>
+            <td>1263674084405252096</td>
+            <td>matookerepublic</td>
+            <td>15 new COVID-19 cases have been confirmed by t...</td>
+            <td>5/21/2020 8:32:34 PM</td>
+            <td>Retweet</td>
+            <td>KKabajwisa</td>
+            <td>1</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>Matooke Republic</td>
+            <td>Kampala, Uganda</td>
+            <td>https://t.co/4au2z8o6u8</td>
+            <td>Freshly Peeled Info</td>
+            <td>7186</td>
+            <td>2516</td>
+            <td>342</td>
+            <td>+00.31628+032.58219/</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>...</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <th>5056</th>
+            <td>5056</td>
+            <td>16824</td>
+            <td>1260636518072421888</td>
+            <td>OWC_ug</td>
+            <td>@OworiSylvia : We have been engaging directly ...</td>
+            <td>5/13/2020 11:22:22 AM</td>
+            <td>Retweet</td>
+            <td>jbogube</td>
+            <td>2</td>
+            <td>NaN</td>
+            <td>OworiSylvia OPMUganda</td>
+            <td>Wealth Creation Ug</td>
+            <td>Uganda</td>
+            <td>https://t.co/QacjAzznSK</td>
+            <td>Our mission is ''To improve household income t...</td>
+            <td>2328</td>
+            <td>3353</td>
+            <td>715</td>
+            <td>+01.25+032.5/</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>5057</th>
+            <td>5057</td>
+            <td>16826</td>
+            <td>1260636408328356096</td>
+            <td>OworiSylvia</td>
+            <td>Major Rubalamira: @OWC_ug has been supplied by...</td>
+            <td>5/13/2020 11:21:55 AM</td>
+            <td>Retweet</td>
+            <td>jbogube</td>
+            <td>14</td>
+            <td>NaN</td>
+            <td>OWC_ug GovUganda OPMUganda MAAIF_Uganda Parlia...</td>
+            <td>Sylvia Damalie Owori</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>Exec Assistant to the CC of Operation Wealth C...</td>
+            <td>48</td>
+            <td>83</td>
+            <td>107</td>
+            <td>NaN</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>5058</th>
+            <td>5058</td>
+            <td>16838</td>
+            <td>1260630805971374080</td>
+            <td>i_kagoya</td>
+            <td>It is going to be very difficult for governmen...</td>
+            <td>5/13/2020 10:59:40 AM</td>
+            <td>Retweet</td>
+            <td>ElliotOrizaarwa</td>
+            <td>1</td>
+            <td>NaN</td>
+            <td>KagutaMuseveni RuhakanaR</td>
+            <td>Irene Kagoya</td>
+            <td>Kampala Uganda</td>
+            <td>NaN</td>
+            <td>A lawyer,  &amp; Women's Rights Activist,   workin...</td>
+            <td>3826</td>
+            <td>792</td>
+            <td>851</td>
+            <td>+00.31628+032.58219/</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>5059</th>
+            <td>5059</td>
+            <td>16839</td>
+            <td>1260630418816225024</td>
+            <td>JenifaOchwo</td>
+            <td>For making the #COVID19UG lockdown bearable......</td>
+            <td>5/13/2020 10:58:07 AM</td>
+            <td>Retweet</td>
+            <td>TheLoveDre</td>
+            <td>1</td>
+            <td>COVID19UG ThankYouUgandans</td>
+            <td>NaN</td>
+            <td>Jenifa Ochwo</td>
+            <td>Uganda</td>
+            <td>NaN</td>
+            <td>Thinker | Faith | Entertainment | Justice | Go...</td>
+            <td>30887</td>
+            <td>3221</td>
+            <td>831</td>
+            <td>+01.25+032.5/</td>
+            <td>NaN</td>
+          </tr>
+          <tr>
+            <th>5060</th>
+            <td>5060</td>
+            <td>16845</td>
+            <td>1260629530391313920</td>
+            <td>whispereye_news</td>
+            <td>@JanetMuseveni  on learning !\n#News #ThankYou...</td>
+            <td>5/13/2020 10:54:36 AM</td>
+            <td>Tweet</td>
+            <td>NaN</td>
+            <td>0</td>
+            <td>News ThankYouUgandans Uganda Education COVID19UG</td>
+            <td>JanetMuseveni</td>
+            <td>Whisper Eye</td>
+            <td>Kampala, Uganda</td>
+            <td>https://t.co/1CvaiPnMva</td>
+            <td>Whisper Eye a world leading independent online...</td>
+            <td>1310</td>
+            <td>337</td>
+            <td>57</td>
+            <td>+00.31628+032.58219/</td>
+            <td>NaN</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>5061 rows × 20 columns</p>
+      </div>
+      </div>
+      
+      </div>
+      
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[6]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Tweet&#39;</span><span class="p">,</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">]]</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[7]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Analyze</span><span class="o">=</span><span class="p">[]</span>
+      
+      <span class="k">for</span> <span class="n">comment</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Tweet&#39;</span><span class="p">]:</span>
+          <span class="n">comment</span><span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;http\S+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">comment</span><span class="p">)</span>
+          <span class="n">custom_tokens</span> <span class="o">=</span> <span class="n">remove_noise</span><span class="p">(</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">comment</span><span class="p">))</span>
+          <span class="n">Analyze</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">(</span><span class="nb">dict</span><span class="p">([</span><span class="n">token</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">custom_tokens</span><span class="p">)))</span>
+          <span class="c1">#print(comment, classifier.classify(dict([token, True] for token in custom_tokens)))</span>
+          
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[8]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">se1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">Analyze</span><span class="p">)</span>
+      <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Analyze&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">se1</span><span class="o">.</span><span class="n">values</span>
+      <span class="n">df</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      <div class="output_wrapper">
+      <div class="output">
+      
+      
+      <div class="output_area">
+      
+          <div class="prompt"></div>
+      
+      
+      <div class="output_subarea output_stream output_stderr output_text">
+      <pre>C:\Users\Joyce\anaconda3\lib\site-packages\ipykernel_launcher.py:2: SettingWithCopyWarning: 
+      A value is trying to be set on a copy of a slice from a DataFrame.
+      Try using .loc[row_indexer,col_indexer] = value instead
+      
+      See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+        
+      </pre>
+      </div>
+      </div>
+      
+      <div class="output_area">
+      
+          <div class="prompt output_prompt">Out[8]:</div>
+      
+      
+      
+      <div class="output_html rendered_html output_subarea output_execute_result">
+      <div>
+      <style scoped>
+          .dataframe tbody tr th:only-of-type {
+              vertical-align: middle;
+          }
+      
+          .dataframe tbody tr th {
+              vertical-align: top;
+          }
+      
+          .dataframe thead th {
+              text-align: right;
+          }
+      </style>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Tweet</th>
+            <th>SENTIMENT</th>
+            <th>Analyze</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>His excellency president #Uganda @KagutaMuseve...</td>
+            <td>1.0</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>@Katabasasa @nbstv #NBSFrontline #NBSUpdates\n...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Mr. ERIAS Lukwago should know that SOPs are in...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Energy Minister @DrKitutu hands over the Ugx.2...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>15 new COVID-19 cases have been confirmed by t...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>...</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <th>5056</th>
+            <td>@OworiSylvia : We have been engaging directly ...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>5057</th>
+            <td>Major Rubalamira: @OWC_ug has been supplied by...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>5058</th>
+            <td>It is going to be very difficult for governmen...</td>
+            <td>NaN</td>
+            <td>Negative</td>
+          </tr>
+          <tr>
+            <th>5059</th>
+            <td>For making the #COVID19UG lockdown bearable......</td>
+            <td>NaN</td>
+            <td>Positive</td>
+          </tr>
+          <tr>
+            <th>5060</th>
+            <td>@JanetMuseveni  on learning !\n#News #ThankYou...</td>
+            <td>NaN</td>
+            <td>Negative</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>5061 rows × 3 columns</p>
+      </div>
+      </div>
+      
+      </div>
+      
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[9]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Convert [Polarity] to positive (1), negative (-1), and neutral (0) for comparison</span>
+      
+      <span class="n">prediction</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="s2">&quot;Negative&quot;</span> <span class="k">else</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">v</span><span class="o">==</span><span class="s2">&quot;Positive&quot;</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Analyze&#39;</span><span class="p">]]</span>
+      <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Prediction&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">prediction</span>
+      <span class="n">df</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      <div class="output_wrapper">
+      <div class="output">
+      
+      
+      <div class="output_area">
+      
+          <div class="prompt"></div>
+      
+      
+      <div class="output_subarea output_stream output_stderr output_text">
+      <pre>C:\Users\Joyce\anaconda3\lib\site-packages\ipykernel_launcher.py:4: SettingWithCopyWarning: 
+      A value is trying to be set on a copy of a slice from a DataFrame.
+      Try using .loc[row_indexer,col_indexer] = value instead
+      
+      See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+        after removing the cwd from sys.path.
+      </pre>
+      </div>
+      </div>
+      
+      <div class="output_area">
+      
+          <div class="prompt output_prompt">Out[9]:</div>
+      
+      
+      
+      <div class="output_html rendered_html output_subarea output_execute_result">
+      <div>
+      <style scoped>
+          .dataframe tbody tr th:only-of-type {
+              vertical-align: middle;
+          }
+      
+          .dataframe tbody tr th {
+              vertical-align: top;
+          }
+      
+          .dataframe thead th {
+              text-align: right;
+          }
+      </style>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Tweet</th>
+            <th>SENTIMENT</th>
+            <th>Analyze</th>
+            <th>Prediction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>His excellency president #Uganda @KagutaMuseve...</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>@Katabasasa @nbstv #NBSFrontline #NBSUpdates\n...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Mr. ERIAS Lukwago should know that SOPs are in...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Energy Minister @DrKitutu hands over the Ugx.2...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>15 new COVID-19 cases have been confirmed by t...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>...</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <th>5056</th>
+            <td>@OworiSylvia : We have been engaging directly ...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>5057</th>
+            <td>Major Rubalamira: @OWC_ug has been supplied by...</td>
+            <td>NaN</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>5058</th>
+            <td>It is going to be very difficult for governmen...</td>
+            <td>NaN</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>5059</th>
+            <td>For making the #COVID19UG lockdown bearable......</td>
+            <td>NaN</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>5060</th>
+            <td>@JanetMuseveni  on learning !\n#News #ThankYou...</td>
+            <td>NaN</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>5061 rows × 4 columns</p>
+      </div>
+      </div>
+      
+      </div>
+      
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[10]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_drop</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">])</span>
+      <span class="n">df_output</span><span class="o">=</span><span class="n">df_drop</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+      <span class="n">df_output</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      <div class="output_wrapper">
+      <div class="output">
+      
+      
+      <div class="output_area">
+      
+          <div class="prompt output_prompt">Out[10]:</div>
+      
+      
+      
+      <div class="output_html rendered_html output_subarea output_execute_result">
+      <div>
+      <style scoped>
+          .dataframe tbody tr th:only-of-type {
+              vertical-align: middle;
+          }
+      
+          .dataframe tbody tr th {
+              vertical-align: top;
+          }
+      
+          .dataframe thead th {
+              text-align: right;
+          }
+      </style>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Tweet</th>
+            <th>SENTIMENT</th>
+            <th>Analyze</th>
+            <th>Prediction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>His excellency president #Uganda @KagutaMuseve...</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Yes, he is one of the most celebrated Journali...</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>@aajtak Social distancing is a myth, anybody c...</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>#COVID19UG cases have been 'smalolized' from 2...</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>#Football256 Update\n\n@ProlineFC are unconten...</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>...</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <th>66</th>
+            <td>#COVID19UG WhatsApp chat both for accurate, tr...</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>67</th>
+            <td>The day more than 317 Members of Parliament we...</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>68</th>
+            <td>Timely, accurate information plays a critical ...</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>69</th>
+            <td>Hello @HonAniteEvelyn it's really interseting ...</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>70</th>
+            <td>@JulianaAkoryo @UNESCO In love with the paneli...</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>71 rows × 4 columns</p>
+      </div>
+      </div>
+      
+      </div>
+      
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[11]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="mi">0</span>
+      
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_output</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">])):</span>
+          <span class="k">if</span> <span class="n">df_output</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">df_output</span><span class="p">[</span><span class="s1">&#39;Prediction&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]:</span>
+              <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+      <span class="n">OverallAccuracy</span> <span class="o">=</span> <span class="n">n</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df_output</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">])</span><span class="o">*</span><span class="mi">100</span>
+      </pre></div>
+      
+          </div>
+      </div>
+      </div>
+      
+      </div>
+      <div class="cell border-box-sizing code_cell rendered">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[12]:</div>
+      <div class="inner_cell">
+          <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">positive</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="n">df_output</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
+      <span class="n">negative</span> <span class="o">=</span> <span class="n">df_output</span><span class="p">[</span><span class="n">df_output</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">]</span><span class="o">==-</span><span class="mi">1</span><span class="p">]</span>
+      
+      <span class="n">positive</span><span class="o">=</span><span class="n">positive</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+      <span class="n">negative</span><span class="o">=</span><span class="n">negative</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+      
+      <span class="n">ng</span><span class="o">=</span><span class="mi">0</span>
+      
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">negative</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">])):</span>
+          <span class="k">if</span> <span class="n">negative</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">negative</span><span class="p">[</span><span class="s1">&#39;Prediction&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]:</span>
+              <span class="n">ng</span><span class="o">+=</span><span class="mi">1</span>
+      <span class="n">NegativeAccuracy</span> <span class="o">=</span> <span class="n">ng</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">negative</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">])</span><span class="o">*</span><span class="mi">100</span>
+      
+      <span class="n">p</span><span class="o">=</span><span class="mi">0</span>
+      
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">positive</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">])):</span>
+          <span class="k">if</span> <span class="n">positive</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">positive</span><span class="p">[</span><span class="s1">&#39;Prediction&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]:</span>
+              <span class="n">p</span><span class="o">+=</span><span class="mi">1</span>
+      <span class="n">PositiveAccuracy</span> <span class="o">=</span> <span class="n">p</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">positive</span><span class="p">[</span><span class="s1">&#39;SENTIMENT&#39;</span><span class="p">])</span><span class="o">*</span><span class="mi">100</span>
+      </pre></div>
+      
+          </div>
       </div>
       </div>
       
@@ -13920,125 +14242,73 @@
       <div class="prompt input_prompt">In&nbsp;[14]:</div>
       <div class="inner_cell">
           <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_tweets_for_model</span><span class="p">(</span><span class="n">cleaned_tokens_list</span><span class="p">):</span>
-          <span class="k">for</span> <span class="n">tweet_tokens</span> <span class="ow">in</span> <span class="n">cleaned_tokens_list</span><span class="p">:</span>
-              <span class="k">yield</span> <span class="nb">dict</span><span class="p">([</span><span class="n">token</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">tweet_tokens</span><span class="p">)</span>
-      
-      <span class="n">positive_tokens_for_model</span> <span class="o">=</span> <span class="n">get_tweets_for_model</span><span class="p">(</span><span class="n">positive_cleaned_tokens_list</span><span class="p">)</span>
-      <span class="n">negative_tokens_for_model</span> <span class="o">=</span> <span class="n">get_tweets_for_model</span><span class="p">(</span><span class="n">negative_cleaned_tokens_list</span><span class="p">)</span>
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Overall Accuracy: &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">OverallAccuracy</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Negative Accuracy: &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">NegativeAccuracy</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Positive Accuracy: &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">PositiveAccuracy</span><span class="p">))</span>
       </pre></div>
       
           </div>
       </div>
       </div>
       
+      <div class="output_wrapper">
+      <div class="output">
+      
+      
+      <div class="output_area">
+      
+          <div class="prompt"></div>
+      
+      
+      <div class="output_subarea output_stream output_stdout output_text">
+      <pre>Overall Accuracy: 64.7887323943662
+      Negative Accuracy: 51.42857142857142
+      Positive Accuracy: 77.77777777777779
+      </pre>
       </div>
-      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-      </div><div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="Randomize-to-categorize-train-and-test-data">Randomize to categorize train and test data<a class="anchor-link" href="#Randomize-to-categorize-train-and-test-data">&#182;</a></h4>
+      </div>
+      
       </div>
       </div>
+      
       </div>
       <div class="cell border-box-sizing code_cell rendered">
       <div class="input">
       <div class="prompt input_prompt">In&nbsp;[15]:</div>
       <div class="inner_cell">
           <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-      
-      <span class="n">positive_dataset</span> <span class="o">=</span> <span class="p">[(</span><span class="n">tweet_dict</span><span class="p">,</span> <span class="s2">&quot;Positive&quot;</span><span class="p">)</span>
-                           <span class="k">for</span> <span class="n">tweet_dict</span> <span class="ow">in</span> <span class="n">positive_tokens_for_model</span><span class="p">]</span>
-      
-      <span class="n">negative_dataset</span> <span class="o">=</span> <span class="p">[(</span><span class="n">tweet_dict</span><span class="p">,</span> <span class="s2">&quot;Negative&quot;</span><span class="p">)</span>
-                           <span class="k">for</span> <span class="n">tweet_dict</span> <span class="ow">in</span> <span class="n">negative_tokens_for_model</span><span class="p">]</span>
-      
-      <span class="n">dataset</span> <span class="o">=</span> <span class="n">positive_dataset</span> <span class="o">+</span> <span class="n">negative_dataset</span>
-      
-      <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
-      
-      <span class="n">train_data</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[:</span><span class="mi">7000</span><span class="p">]</span>
-      <span class="n">test_data</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="mi">7000</span><span class="p">:]</span>
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_output</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;Output/Covid19UG_NLTK_63.38%_N42.86%_P83.33%.xlsx&#39;</span><span class="p">)</span>
       </pre></div>
       
           </div>
       </div>
       </div>
       
-      </div>
-      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-      </div><div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="Use-NaiveBayesClassifier-functino-to-classify-negative-and-positive-tweets">Use NaiveBayesClassifier functino to classify negative and positive tweets<a class="anchor-link" href="#Use-NaiveBayesClassifier-functino-to-classify-negative-and-positive-tweets">&#182;</a></h4>
-      </div>
-      </div>
       </div>
       <div class="cell border-box-sizing code_cell rendered">
       <div class="input">
       <div class="prompt input_prompt">In&nbsp;[16]:</div>
       <div class="inner_cell">
           <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">classify</span>
-      <span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">NaiveBayesClassifier</span>
-      <span class="n">classifier</span> <span class="o">=</span> <span class="n">NaiveBayesClassifier</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
-      
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy is:&quot;</span><span class="p">,</span> <span class="n">classify</span><span class="o">.</span><span class="n">accuracy</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">test_data</span><span class="p">))</span>
-      
-      <span class="nb">print</span><span class="p">(</span><span class="n">classifier</span><span class="o">.</span><span class="n">show_most_informative_features</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;Output/Covid19UG_NLTK.xlsx&#39;</span><span class="p">)</span>
       </pre></div>
       
           </div>
       </div>
       </div>
       
-      <div class="output_wrapper">
-      <div class="output">
-      
-      
-      <div class="output_area">
-      
-          <div class="prompt"></div>
-      
-      
-      <div class="output_subarea output_stream output_stdout output_text">
-      <pre>Accuracy is: 0.996
-      Most Informative Features
-                            :( = True           Negati : Positi =   2071.0 : 1.0
-                            :) = True           Positi : Negati =    996.6 : 1.0
-                      follower = True           Positi : Negati =     37.0 : 1.0
-                           sad = True           Negati : Positi =     33.4 : 1.0
-                        arrive = True           Positi : Negati =     19.8 : 1.0
-                     community = True           Positi : Negati =     17.0 : 1.0
-                           x15 = True           Negati : Positi =     17.0 : 1.0
-                          damn = True           Negati : Positi =     15.7 : 1.0
-                          miss = True           Negati : Positi =     12.9 : 1.0
-                         didnt = True           Negati : Positi =     12.3 : 1.0
-      None
-      </pre>
-      </div>
-      </div>
-      
-      </div>
-      </div>
-      
-      </div>
-      <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-      </div><div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <h4 id="Test-a-sentiment">Test a sentiment<a class="anchor-link" href="#Test-a-sentiment">&#182;</a></h4>
-      </div>
-      </div>
       </div>
       <div class="cell border-box-sizing code_cell rendered">
       <div class="input">
-      <div class="prompt input_prompt">In&nbsp;[25]:</div>
+      <div class="prompt input_prompt">In&nbsp;[17]:</div>
       <div class="inner_cell">
           <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">custom_tweet</span> <span class="o">=</span> <span class="s2">&quot;I ordered just once from TerribleCo, they screwed up, never used the app again.&quot;</span>
+      <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+      <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+      <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+      <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
       
-      <span class="n">custom_tokens</span> <span class="o">=</span> <span class="n">remove_noise</span><span class="p">(</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">custom_tweet</span><span class="p">))</span>
-      
-      <span class="nb">print</span><span class="p">(</span><span class="n">custom_tweet</span><span class="p">,</span> <span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">(</span><span class="nb">dict</span><span class="p">([</span><span class="n">token</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">custom_tokens</span><span class="p">)))</span>
+      <span class="n">df_output</span>
       </pre></div>
       
           </div>
@@ -14051,13 +14321,538 @@
       
       <div class="output_area">
       
-          <div class="prompt"></div>
+          <div class="prompt output_prompt">Out[17]:</div>
       
       
-      <div class="output_subarea output_stream output_stdout output_text">
-      <pre>I ordered just once from TerribleCo, they screwed up, never used the app again. Negative
-      </pre>
+      
+      <div class="output_html rendered_html output_subarea output_execute_result">
+      <div>
+      <style scoped>
+          .dataframe tbody tr th:only-of-type {
+              vertical-align: middle;
+          }
+      
+          .dataframe tbody tr th {
+              vertical-align: top;
+          }
+      
+          .dataframe thead th {
+              text-align: right;
+          }
+      </style>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Tweet</th>
+            <th>SENTIMENT</th>
+            <th>Analyze</th>
+            <th>Prediction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>His excellency president #Uganda @KagutaMuseveni recognising efforts of #Ahmadiyya Muslim Community towards  #COVID19UG. So grateful to our partners @HumanityFirstUK @UgHumanityfirst @HFI1995 4 support accorded to the ppl of Uganda. @ntvuganda #EidMubarak #EidUlFitr #NBSUpdates https://t.co/CLDFyJrLgx</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Yes, he is one of the most celebrated Journalists of our time. \nYes, he is the reigning @BBC Komla Dumor award winner.\nBut, he is still humble enough to carry video equipment with the rest of us to the frontlines of the #COVID19 field.\nThe lesson is Humility.\n#COVID19UG https://t.co/RlZ8fxG6oh</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>@aajtak Social distancing is a myth, anybody can see this now a days, on road, in streets, at local market and at shops, it's very dangerous at this time #Social_Distancing #COVID19UG #aamaadmiparty #delhicm #ndtv #indiatv #hindustantimmes #timesofindia #bbcnews #ZeeNews #dainikbhasker</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>#COVID19UG cases have been 'smalolized' from 264 to 145      . \n\nWhere is the Luwero Hajji we celebrate?!</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>#Football256 Update\n\n@ProlineFC are uncontended though they accept to the fact that they've been relegated due to the coronavirus pandemic     \n\nhttps://t.co/3luQE42X6e #COVID19UG https://t.co/fZoKnervck</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>#COVID19UG messed me up... I would be here talking to my dog. https://t.co/1pUwbHpdqz</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>I don't think that #COVID19UG should stop elections. I don't think that the millions who vote attend political rallies #KatikkiroOnTheSPot #NTVOnTheSpot</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>#nbsfrontline should change the opposition frontliners. None of them is discussing substance. All of them think President M7 has failed to manage #COVID19UG &amp; are blaming his tea taking skills. If indeed he has failed, why do we have the least cases in the region &amp;amp; no deaths?</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>For accurate info about #COVID19UG\n@modoanita\n https://t.co/WiD5p6i1GC</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>@GodberTumushabe @JaneRuth_Aceng Nurses in Soroti also protesting...No clarity on what the Task Force funds are really doing...#COVID19UG</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>@JaneRuth_Aceng @DianaAtwine @MinofHealthUG thank u for the great work done on handling #COVID19UG, am inquiring have the deducted foreign covid cases(from the total number) been sent back to their countries or they are still in Uganda?\n\nThank you</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>#NBSFrontline: Those of you waiting for @GovUganda to defend you infant of your landlord; you might be in trouble. \n\nThe Government may be seriously fronting a proactive strategy. Kindly engage your landlord. hehe...\n#NBSUpdates #COVID19UG #StaySafeUG #Stopstigma</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>Do you still have plans for 2020      Oba you are trying to survive to see 2021 #COVID19UG</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>@SimonKaggwaNjal @nbstv the way I see it, gov't is presenting post- #COVID19UG measures in a "private-sector-led" manner. So lets brace ourselves for selfcare as they borrow more cash to eat. #NBSFrontline</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>Thank you @OfwonoOpondo for putting good points and defeating those all opposition leaders. They should give a credit to this government of uganda on fighting against #COVID19UG #NBSFrontline</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>#Uganda just reported 5 new community COVID19 CASES \nI now smell @KagutaMuseveni making changes lets brace ourselves #COVID19UG #coronavirus https://t.co/e8qQW3cgbZ</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>#COVID19UG this is not good. We had for some time forgotten about these community cases. We continue to place our front liners in the hands of God and we pray for more blessings during this fight. #lockdownug https://t.co/NMyPpLcNmF</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>@JaneRuth_Aceng why is @ntvuganda giving fake news, 155 where are the 5? #COVID19UG.</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>@ntvuganda Sick en' tired of these #COVID19UG Positive Cases in addition to the #LockDown</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>#COVID19UG: Uganda Loses $3bn in #Tourism, Remittances as Experts See Recovery in 2021\n#ChimpReportsNews #UgandaNews #Uganda #Featured #Coronavirus #BusinessNews @TourismBoardUg @MTWAUganda @GovUganda @mofpedU #StaySafeUG #Tonsemberera #Masks4All  #News\nhttps://t.co/JqT5RDOSBW</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>#COVID19UG In Order for our economy to come out of this covid 19 situation strong and resilient, we shall invest 1 trillion in Uganda Development Bank-UDB to support manufacturing companies and our SMEs to access cheap credit and create jobs for Ugandans.</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>21</th>
+            <td>On the 21st of March 2020 Uganda registered its first case of #coronavirus it was the darkest day of my life for my country to become a victim of the pandemic l pray each day,having been in a lent period l will surely dedicate my prayers for my nation. #COVID19UG #WashYourHands</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>22</th>
+            <td>@genoeric1 Mu Uganda tulinamu ebyaana n'abaana. The whole #COVID19UG and in particular Food distribution was politicised... You can't distribute any relief items to the public if you're opposition (@FDCOfficial1 @People_Power_Ug @DPSecretariat1), but you can do anything if you're @NRMOnline</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>23</th>
+            <td>I like the #NBSFrontline trigger, the choice of who starts to give us the Govt ‘plan’ in OO which I haven’t heard. Let us wait to partake what @SimonKaggwaNjal has in store for us. What is the real plan for post #COVID19UG? By the way easing the opening up is not a plan!</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>24</th>
+            <td>The government can't stop you if you're really determined to get infected- @norbertmao \n#COVID19UG\n#NbsFrontLine</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>25</th>
+            <td>#NTIHCUPDATES Young people have been greatly affected by the #COVID19UG pandemic which has further increased the unmet need for young people's SRHR. Access to SRHR services &amp; information has reduced during this time. Stay tuned for our feature story coming soon on @nbstv https://t.co/MXBZiGowPI</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>26</th>
+            <td>Mayor Lukwago stresses that Museveni running the #COVID19UG fight through his own means instead of using existent agencies is the direct translation of ejoogo. #nbsfrontline</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>27</th>
+            <td>#COVID19UG Peter Niwagaba a  Prominent businessman in #Kabale has donated a cow and 75Kgs of rice to the Drivers of the Kabale covid19 taskforce for the good work exhibited @KabaleLocal https://t.co/cJbHEAEop9</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>28</th>
+            <td>Pastor Senyonga labels fellow 'men of God' @Prophet_elvis and Yiga ‘false prophets’ for giving false prophecies about #COVID19UG \n#Tonsemberera\nhttps://t.co/RhxgPUzLfI</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>29</th>
+            <td>How do you rate the food aid of the 90s to that of 2020? Nga we ate well. #MujoogaBasajjaMwe #foodaid1986vs2020 #COVID19UG @ntvuganda @TBukumunhe @nbstv @nbsfrontline @DailyMonitor @newvisionwire @BBCAfrica @NTVonTheSpot @SamaEmme @dancunkabiito @ngonians https://t.co/CwlDUOVt4Q</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>30</th>
+            <td>This is before sorting banange. The beans are clean... #COVID19UG #StaySafeUg https://t.co/XpITlA4OSf</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>31</th>
+            <td>@observerug The healthcare team has been so phenomenal during the #COVID19UG  , so everything that has to been done must be considered before final conculsion . #MentalHealthAwarenessWeek</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>32</th>
+            <td>A photo that has so many messages.\n1. How beautifully Uganda is blessed.\n2. Village/Rural Home deliveries during #COVID19UG   \n3. I bought one from him.(Smile on his face) https://t.co/2EwJTGMtiH</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>33</th>
+            <td>The education gap in Uganda and #COVID19UG effect. Read my article about this here      https://t.co/4mo5FawZ6h</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>34</th>
+            <td>What helped when the floating island came in was the wonderful equipment we bought from Japan. #M7Address #COVID19UG https://t.co/KgOhnEWMQz</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>35</th>
+            <td>Medical professionals will facilitate webinars which will be broadcast live on @ubctvuganda. The aim of the partnership is to allow citizens to interact with experts and get a better context of the pandemic and @GovUganda efforts to protect them against #COVID19UG \n\n@Tybisa https://t.co/yzkvTWS5i9</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>36</th>
+            <td>NEWS: We are coming for you! MP Acidri warns district leaders over COVID-19 funds\n#covid19ug #WestNIle #Uganda\nhttps://t.co/XlHuh9KT0M</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>37</th>
+            <td>These efforts of prevention have given us good results, we have been testing people every day starting on the 21st of March. Up-to now, we have tested a big number of people, the positive ones are only 79, the negative ones are 12,389. #M7Address #COVID19UG #StaySafeUG #StayHome https://t.co/3tlO18fuHu</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>38</th>
+            <td>@ntvuganda Absolutely yes. And it should announce a more stimulus package as well for post #COVID19UG.</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>39</th>
+            <td>#Media, please don’t give the President a free pass on his #Covid19UG #M7address. Don’t simply repeat what he says. Provide context. Unmask his claims. What doesn't make sense? Where are the gaps? If he sounds incoherent or gives a confusing &amp; long-winded speech, call him out.</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>40</th>
+            <td>President Museveni has pardoned 833 PRISONERS as part of the efforts to decongest the Prisons to combat the spread of #COVID19UG.\n\nAlthough 833 is a small number, we thank those who have been involved in this process - @nickopiyo and your team @chapterfourug, @LaspnetUganda, etc</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>41</th>
+            <td>Great Works Done Today , Loaded  Out a Project Cargo For China Civil Engineering and Construction Co. Thanks Team for the good Job Not forgetting to stay safe. #COVID19UG https://t.co/PW5Brx6BHa</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>42</th>
+            <td>Six ways you can beat the #socialdistancing blues and stay positive and connected during this period powered by Mastercard. \nhttps://t.co/B40vuZqzAl\n#covid19UG #Tonsemberera #StaySafe https://t.co/6mhs1CKAGL</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>43</th>
+            <td>#covid19ug has affected a lot the work of KCCA since the busy center no longer collects revenue from the traders who used to make the City busy @KCCAUG @babatvuganda @AndrewKitaka @AmulaAlbert @sammwesigwa8 https://t.co/HcpNyQzhNC</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>44</th>
+            <td>@MinofHealthUG @JaneRuth_Aceng @DianaAtwine @KagutaMuseveni @jumuiya @NITAUganda1 @MoWT_Uganda @URAuganda Also, @MinofHealthUG has secured two (2) Gene-Xpert machines of 16 modules each with a capacity of 768 tests per 24 hours = 1,536 tests per day. They are at Mutukula border point of entry. @JaneRuth_Aceng @DianaAtwine #COVID19UG #StaySafeUG</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>45</th>
+            <td>.@UNICEF has funded 14 community drives, running for 3 weeks covering 11 sub-counties and town councils in the Western region. #InvestInUGChildren #StaySafeUG #COVID19UG</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>46</th>
+            <td>The messages were designed by @MinofHealthUG  with support from @UNICEFUganda  and @WHOUganda . #InvestInUGChildren #StaySafeUG #COVID19UG</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>47</th>
+            <td>We have donated hand sanitizers, surgical face masks and PCR testing kits worth 155M UGX to the Covid-19 response team at @MinofHealthUG. Together we will fight this pandemic out of #Uganda.\n@JaneRuth_Aceng received our Aid.\n#COVID19UG  \n#StaySafeUG https://t.co/pkxpkBE4h6</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>48</th>
+            <td>@MinofHealthUG @DianaAtwine @UVRIug @KCCAUG @tegegny @WHOUganda @MauriceMugisha Great one! Looking forward to it! #COVID19UG #HealthForAll</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>49</th>
+            <td>Every little bit helps\n@jkkarungi @lizmutesi @RukhShana @nbstv @ntvuganda @rudende @PatriqKanyomozi\n@LuckyMbabazi @kanyindo\n@Kasabiiti \n#COVID19UG https://t.co/3JlSltci1C</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>50</th>
+            <td>I like this #COVID19UG https://t.co/6LmmD0LSFW</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>51</th>
+            <td>Regarding the concern of religious leaders who have been affected by #COVID19UG and nolonger receive offertory and other gifts, the Prime Minister says that he has taken note of the concern raised by Members and Govt will definitely intervene.  @pwatchug https://t.co/EhAYF71QsV</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>52</th>
+            <td>"For the shops, and hotels, let them start on the 26th of May. Apart from social distancing, the big measure is using masks. Those who can get masks on their own, we don't mind provided they are the right quality." ~President Museveni.\n\n#MonitorUpdates\n#M7Address\n#Covid19UG</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>53</th>
+            <td>If not because my Chemistry book was stolen at my high school time,\nWhat is Corona virus vaccines that I can't produce?\n  \n#COVID19UG</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>54</th>
+            <td>Thank you @SarahBireete. The music one listens to during #COVID19UG time will give life and life in abundance. How strategic to laugh one's problems away. A laughing world would build strong immunity required to fight the pandemic. @AnneKansime @JaneRuth_Aceng @drpaulkasenene https://t.co/6FMGQ84BNF</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>55</th>
+            <td>One individual in Kenya, sealed his wife's genitals. Allegedly out of jealousy. A gross case of #DomesticAbuse #Uganda @FIDA_Uganda @fidakenya @Chat2Bo #Covid_19 #COVID19UG</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>56</th>
+            <td>Muslim Journalists have received EID packages from Joseph Wajjala, CEO, One Million Dollar Party. The packages have been handed over by Bbosa Gonzaga. \n\nWajjala thanked journalists for creating awareness about  #COVID19UG. \n\n  : @shamimsaad2 #NewVisionXtra https://t.co/sNRTqQ1CNw</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>57</th>
+            <td>I wasn't there but I've heard that "the Speaker of Parliament Rt. Hon @RebeccaKadagaUG commended MTN Uganda for the generosity they have always extended towards Busoga Kingdom over the years."\n\nThat was during the handover of #RamadanWithMTN food &amp; alms in Jinja. #COVID19UG https://t.co/fx5a8KQA4O</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>58</th>
+            <td>With the ongoing phased reopening of the economy, it's still not clear how social distancing will be effected &amp; maintained especially in the informal sector. How safe are the players in this setting? @MinofHealthUG @AmeliaAKyamb @JaneRuth_Aceng @DianaAtwine @Mglsd_UG #COVID19UG</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>59</th>
+            <td>Do not miss the #COVID19UG #FacesofCare. https://t.co/hSEWngRa7z</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>60</th>
+            <td>Despite #COVID19UG  crisis,the imports continued and essential commodities have been available. https://t.co/GaToqtQY5O</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>61</th>
+            <td>Today is current affairs #talkshow night on     's two foremost #television stations. Time for regurgitation of general knowledge, political head-butting and clumsy showmanship.\n#coronavirus\n#COVID19UG\n#hydroxychloriquine</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>62</th>
+            <td>Hon Peace Mutuuzo says over 300 cultural events were cancelled impacting over 700 artists and their fans. \n\nThe economic, social and emotional cost is enormous. https://t.co/uxREUER5gh #Covid19UG https://t.co/WwZck9otdy</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>63</th>
+            <td>@TonyGlencross @golfunion @KampalaPost @ntvuganda @933kfm @The_EastAfrican @Monitor_Sport @mikeinuganda @JohnsonOmolo @jkmuhwezi @DailyMonitor @mnamanya @AnneAbeja @Joel_Khamadi @KiryowaKk @Educ_SportsUg And because most Captains of Industry will be playing, there will be a quicker move to post-#COVID19UG economic recovery, right? Due to more discussions about it happening on those greens (@rggoobi &amp; @wekesa_amos that isn't ddoodo). I guess @RuhakanaR had that in mind! @conradjvn</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>64</th>
+            <td>Also the inland port of Kenya (Naivasha) could be made available for quick clearing of goods.\n\n#COVID19UG</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>65</th>
+            <td>Pastor Jackson Ssenyonga just made hundreds of people line up for food relief. This breaks every single rule in the social distancing book. \ncc: @MinofHealthUG @GovUganda\n@PoliceUg \n#COVID19UG \nCourtesy    https://t.co/VOGRwxiPK7</td>
+            <td>-1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>66</th>
+            <td>#COVID19UG WhatsApp chat both for accurate, trustworthy and  up-to-date information. This is free-to-use service that allows #Ugandans to get answers to the most common questions about COVID19 from @MinofHealthUG.\njust save contact &amp; send any word like 'Hi' @GCICUganda https://t.co/gxMnB0kinT</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>67</th>
+            <td>The day more than 317 Members of Parliament were given UGX40,000,000 each as a token for recognizing Pres. Museveni’s fight against #Covid19UG is the day I lost my generosity of contributing to anything Covid Task force related. \n\n*We’re a banana republic full of educated idiots.</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>68</th>
+            <td>Timely, accurate information plays a critical role in protecting the health and wellbeing of all, including the most vulnerable! #InvestInUGChildren #StaySafeUG #COVID19UG</td>
+            <td>1.0</td>
+            <td>Negative</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <th>69</th>
+            <td>Hello @HonAniteEvelyn it's really interseting that a 34 year old GOVERNMENT thinks it necessary to DICTATE the COLOUR of #COVID19UG face masks in this DEMOCRATIC country.\nWhat I'm failing to understand is the issue with BLACK face masks? What was the logic behind that?</td>
+            <td>-1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>70</th>
+            <td>@JulianaAkoryo @UNESCO In love with the panelists. It's such an in-depth dialogue as we celebrate this culture day.\n\n#ShareCultureUg #Covid19Ug https://t.co/e3h2nMe6xz</td>
+            <td>1.0</td>
+            <td>Positive</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
       </div>
+      </div>
+      
       </div>
       
       </div>
@@ -14078,25 +14873,23 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-6 col-lg-3">
-            <a href="../index.html"><img src="../assets/img/logo-dark.png" alt="logo"></a>
+            <a href="../../index.html"><img src="../../assets/img/logo-dark.png" alt="logo"></a>
           </div>
 
           <div class="col-6 col-lg-3 text-right order-lg-last">
             <div class="social">
-              <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
-              <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
-              <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
-              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
-            </div>
+              <a class="social-twitter" href="https://twitter.com/JoyceOoops"><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" href="https://www.linkedin.com/in/joyce-yanru-jiang/"><i class="fa fa-linkedin"></i></a>
+        </div>
           </div>
 
           <div class="col-lg-6">
             <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
-              <a class="nav-link" href="../uikit/index.html">Elements</a>
-              <a class="nav-link" href="../block/index.html">Blocks</a>
-              <a class="nav-link" href="../page/about-1.html">About</a>
-              <a class="nav-link" href="../blog/grid.html">Blog</a>
-              <a class="nav-link" href="../page/contact-1.html">Contact</a>
+              <a class="nav-link" href="../../theme/page/about-2.html">About</a>
+              <a class="nav-link" href="https://twitter.com/JoyceOoops">Twitter</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/joyce-yanru-jiang/">LinkedIn</a>
+              <a class="nav-link" href="../../theme/page/policy.html">Policy</a>
+              <a class="nav-link" href="../../theme/page/contact-1.html">Contact</a>
             </div>
           </div>
 

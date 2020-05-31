@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Four Sentiment Analysis Methods in Python</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="../../index.html">
+            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="../../theme/page/about-2.html" style="color:black">About Me</a>
+            <a class="nav-link" href="../../theme/blog/research.html" style="color:black">Research</a>
+            <a class="nav-link" href="../../theme/blog/project.html" style="color:black">Project</a>
+            <a class="nav-link" href="../../theme/blog/data.html" style="color:black">Data Analytics</a>
+            <a class="nav-link" href="../../theme/page/contact-1.html" style="color:black">Contact</a>
+          </nav>
+        </section>
+
+        <a class="btn btn-sm btn-round btn-dark" href="../../theme/page/about-2.html">About Me</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Blog content
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section">
+        <div class="container">
+
+          <div class="text-center mt-8">
+            <h2>Review: Four Sentiment Analysis Methods in Python (2)</h2>
+            <p>June 1, 2020 By <a href="#">Joyce Jiang</a></p>
+          </div>
+
+
+          <div class="text-center my-8">
+            <img class="rounded-md" src="../assets/img/thumb/emoji4.jpg" alt="...">
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p class="lead">Since we couldn’t reach a satisfied accuracy (around 75%) of the three methods above, we decided to test an unsupervised model, which is a non-labor-intensive way for conducting a sentiment analysis. I spent some time to find a REAL unsupervised model because most of the “unsupervised sentiment analysis” you could find online actually only used an unsupervised NLP tool word2vec. They are “fake” unsupervised sentiment analysis because you still need to label data manually to feed the algorithms, which did not match with our budget and our purpose of exploring a truly unsupervised method. </p>
+              <img class="rounded-md" src="../assets/img/thumb/crop5.png" alt="...">
+              <p>&nbsp;</p><p>In the end, I found one tutorial on rafaljanwojciki's GitHub, you can check it out under his repo <a href="https://github.com/rafaljanwojcik/Unsupervised-Sentiment-Analysis"><strong><em>Unsupervised-Sentiment-Analysis</em></strong></a><strong>.</strong> The main idea of this method is to use word2vec to vectorize all words in your text and then perform a K-means cluster analysis to categorized all words into two groups: positive and negative. With this categorization, you will be able to label all words with positive and negative sentiments and create a <strong>sentiment dictionary</strong> from there. The author of this method also performed a <strong>TF-IDF</strong> <a href="#_ftn1" name="_ftnref1">[1]</a>function to vectorize each document based on the importance of the words. Finally, you can use this dictionary to tag the words in each document (Twitter post) and convert it to a vector, and use a <strong>dot product</strong> in linear algebra to calculate the score of each document.</p>
+              
+              <p><strong>Dot Product</strong></p>
+              <p>It may sound very abstractive right now, but if you follow my scripts step by step, which comprised three separate Jupyter Notebooks <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/UnsupervisedNLP/Unsupervised.ipynb"><strong>(1)Unsupervised</strong></a> <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/UnsupervisedNLP/Kmeans.ipynb"><strong>(2)K-means</strong></a> <a href="https://github.com/JoyceJiang73/Sentiment_Analysis/blob/master/UnsupervisedNLP/Prediction.ipynb"><strong>(3)Prediction</strong></a>, you will find it more understandable.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop6.png" alt="...">
+              <p>&nbsp;</p><p>I thought this is really a genius way to perform an unsupervised sentiment analysis, and it works quite well even with the Polish content in rafaljanwojciki's GitHub. However, I failed to build a valid model in the step of clustering, which I will explain more about why I failed and what you could learn from my failure.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop7.png" alt="..."><p>&nbsp;</p>
+              <p><strong>My findings:</strong></p>
+              <p>In the clustering process, we were supposed to received two clusters: positive and negative ones. This could be done by checking the word list in each cluster to determine the sentiment of it. For instance:</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop8.png" alt="..."><p>&nbsp;</p>
+              <p>This one looks like a negative cluster. However, when I clustered all words into two categories, they were not grouped by negative and positive sentiments, instead they were grouped by the English and non-English content:</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop9.png" alt="..."><p>&nbsp;</p>
+              <p>At first, I tried to find a way to modify the clustering result. When I checked the actually cluster graph, I&rsquo;m also not satisfied with K-means clustering by looking at its visualization, so I attempted K-means clustering multiples times with cluster=3 and cluster =4. The visualization did not look better and I still didn&rsquo;t get a result of separating negative and positive words.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop10.png" alt="..."><p>&nbsp;</p>
+              <p>I started to realize that it is not necessary for K-means to only cluster all words based on positive and negative sentiments. I reached out to an NLP expert and was able to refine my clustering based on his suggestions:</p>
+              <ul>
+              <li><strong>Customize your stopwords list:</strong> There are some debates about whether we should use default stopwords list for sentiment analysis and to what extend should we develop our own customized stopwords list. The answer is &ndash;if you want a reliable sentiment analysis model, in most of the cases you should customize you own version of it.</li>
+              <li><strong>Clean the non-English words</strong> if you don&rsquo;t have a way to accurately translate them to English.</li>
+              <li>Only leave <strong>adjectives, adverbials, and nominal adjectives</strong> (such as excellency) for training word2vec, so the sentiment dictionary will only tag those words in the document.</li>
+              <li>Remember to <strong>clean the negation words</strong> from stopwords list if you are not writing you own version, and compute the sentiment score by <strong style="font-family:monospace;color:blue;">Score * (-1)^n</strong> to get an accurate sentiment for a document.</li>
+              <li>It&rsquo;s your discretionary decision to use TF-IDF to assign an importancy score for each word or not.</li>
+              </ul>
+              <p>The explanation is that there are so many characteristics of a word that could be more dominated than the sentiment (such as the language) under different contexts, so if we simply cluster all words without the cleaning process, we may not exactly get a cluster result based on sentiments.</p>
+              <p><strong>Strength</strong></p>
+              <p>It&rsquo;s a non-labor-intensive way to have algorithms automating the word labeling process. The method is repeatable and more flexibly. Word2vec would be able to capture the contextual information of a word at the same time.</p>
+              <p><strong>Weakness</strong></p>
+              <p>Even more challenging for users who do not have prior knowledge of advanced coding or NLP techniques. It increases users&rsquo; work in data preprocessing, such as excluding non-English content, and filtering adjectives and adverbials. The users may test different combination of word preprocessing to get a satisfied result.</p>
+              <p>Additionally, for all unsupervised NLP, we need to feed the model with a large amount of data. For me, it&rsquo;s 40K pieces of tweets of Ugandan COVID19-related content. In some of the cases, we may not be able to find that much of training data for a word2vec model.</p>
+              
+              <p>&nbsp;</p>            
+              <p>&nbsp;</p>
+              <p>This article covers the review of unsupervised method word2vec + K-means clustering in sentiment analysis. You can check out the reading of supervised method <strong>Vader, TextBlob, and NLTK</strong> at </p>
+              <p><a href="project_NLP1.html"><strong><em>Review: Four Sentiment Analysis Methods in Python (1)</em></strong></a></p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p><a href="#_ftnref1" name="_ftn1">[1]</a> <strong>*TF-IDF: a model to measure the importance of each word in a document</strong></p>
+              <p>William Scott gives a clear explanation of what TF-IDF is. In his blog on <a href="https://towardsdatascience.com/tf-idf-for-document-ranking-from-scratch-in-python-on-real-world-dataset-796d339a4089">Medium</a>, he explains how the model calculates the importance of a word based on its frequency and the document length by using a log computation.</p>
+                          
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../../index.html"><img src="../../assets/img/logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-twitter" href="https://twitter.com/JoyceOoops"><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" href="https://www.linkedin.com/in/joyce-yanru-jiang/"><i class="fa fa-linkedin"></i></a>
+        </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="../../theme/page/about-2.html">About</a>
+              <a class="nav-link" href="https://twitter.com/JoyceOoops">Twitter</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/joyce-yanru-jiang/">LinkedIn</a>
+              <a class="nav-link" href="../../theme/page/policy.html">Policy</a>
+              <a class="nav-link" href="../../theme/page/contact-1.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>
