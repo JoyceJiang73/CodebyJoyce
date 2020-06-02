@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Four Sentiment Analysis Methods in Python</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="../../index.html">
+            <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="../../theme/page/about-2.html" style="color:black">About Me</a>
+            <a class="nav-link" href="../../theme/blog/research.html" style="color:black">Research</a>
+            <a class="nav-link" href="../../theme/blog/project.html" style="color:black">Project</a>
+            <a class="nav-link" href="../../theme/blog/data.html" style="color:black">Data Analytics</a>
+            <a class="nav-link" href="../../theme/page/contact-1.html" style="color:black">Contact</a>
+          </nav>
+        </section>
+
+        <a class="btn btn-sm btn-round btn-dark" href="../../theme/page/about-2.html">About Me</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Blog content
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section">
+        <div class="container">
+
+          <div class="text-center mt-8">
+            <h2>Network Analysis Brief Introduction with a Case Study of #COVID19 Twitter Search Results in the US</h2>
+            <p>June 1, 2020 By <a href="#">Joyce Jiang</a></p>
+          </div>
+
+
+          <div class="text-center my-8">
+            <img class="rounded-md" src="../assets/img/thumb/network.jpg" alt="...">
+            <p>Photo by Omar Flores on Unsplash</p>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p class="lead">I found <strong><a href="http://www.cs.umd.edu/~golbeck/INST633o/index.shtml">this website</strong></a> created by Dr. Jennifer Golbeck for her Social Media Analysis class quite useful in explaining network science terminologies and Gephi applications. The follwing section is a summerization of her course introduction. </p>
+
+              <h4><span style="color: #0000ff;"><strong>Terminology</strong></span></h4>
+              <p><strong>Centrality</strong></p>
+              <ul>
+              <li>Degree: number of edges connected to one node</li>
+              <li>Closeness: average of shortage path of one node to every other node, explains how close a node connected to other node.
+              <ul>
+              <li>disease spread</li>
+              </ul>
+              </li>
+              <li>Betweenness: percentage of shortest path that cross the node
+              <ul>
+              <li>social network</li>
+              <li>identify gatekeeper of the spread work (information flow)</li>
+              <li>betweenness node: monitoring network</li>
+              </ul>
+              </li>
+              <li>Eigenvector centrality: measure of node&rsquo;s importance
+              <ul>
+              <li>Iterative matrix computation that gives more weight to the nodes that are important</li>
+              <li>Google page rank (Wikipedia, CNN get more credits for links)</li>
+              </ul>
+              </li>
+              </ul>
+  
+              <p><strong>Connectivity and cohesion</strong> (the entire network)</p>
+              <ul>
+              <li>Minimum number of nodes to remove before the network becomes disconnected</li>
+              </ul>
+
+                <img class="rounded-md" src="../assets/img/thumb/crop11.png" alt="...">
+                <p>&nbsp;</p>
+                <p style="text-align: center;" class="small">By Dr. Jennifer Golbeck from her Social Media Analysis Class website </p>
+
+              <hr class="w-100px">
+
+              <h4><span style="color: #0000ff;"><strong>Tools</strong></span></h4>
+              <ul>
+              <li><strong>Nvivo</strong> for scraping Twitter dataset (could be replaced with Python)</li>
+              <li><strong>Python</strong> for data cleaning (edge and node dataset)</li>
+              <li><strong>Gephi</strong> for network analysis</li>
+              </ul>
+              <p><strong>&nbsp;</strong></p>
+              <h4><span style="color: #0000ff;"><strong>CASE STUDY</strong></span></h4>
+              <p><strong>#COVID19 (combined Twitter search results of #COVID19 + #coronavirus, not case sensitive)</strong></p>
+              <p>*Notice:&nbsp;Since I need to obtain consent from each Twitter user who appeared in my research to publish this content, I will blur their account names in this illustration for simplicity. &nbsp;For more data privacy policy details, you can check it out at Consents &amp; Permissions under <strong><a href="https://developer.twitter.com/en/developer-terms/policy">Twitter Developer Terms Policy</a></strong></p>
+              <p>&nbsp;</p>
+              <p><strong>Centrality</strong></p>
+              <p>Closeness</p>
+              <ul>
+              <li>The closeness is not interesting here because one Twitter account could have shorter paths to other users (such as retweeting others&rsquo; post actively), but it does not mean this account is more influential.</li>
+              </ul>
+              <p>Betweenness (Graph 1.1)</p>
+              <ul>
+              <li>The larger nodes represent higher betweenness, which are the hubs that play roles as <strong>gatekeepers</strong> in spreading COVID19-related information on Twitter.</li>
+              <li>All edges and nodes in this network graph are filtered by the following condictiones: have degrees over two, are not separate from the giant component, and are not self-tweeting their posts.</li>
+              <li>We can see that nodes with high betweenness are usually the connecting nodes, that indispensably connect two or even multiple clusters and communities. L-----_G---- (LGBT), Re-----20 (Resister), and mo--55(news) are the major players in this network, followed by L---O--- (Pro Trump), s--- (pro Trump), Su----, Avi---, Backstory---, and cbcnewsbc. Some node characteristics are difficult to identify because betweenness nodes usually have mixed interests.</li>
+              <li>L----_G----- is a connector between LGBT and left partisan communities, Re-------20 is a major player in the &ldquo;resister&rdquo; community, and m----55 is a connector of the US news and international news outlets.</li>
+              </ul>
+
+                <img class="rounded-md" src="../assets/img/thumb/crop15.png" alt="...">
+                <p>&nbsp;</p>
+                <p>Importance (Graph 1.2)</p>
+                <ul>
+                <li>The graph tells a different story when we focus on the node importance instead of the betweenness. S----_m--- (LGBT), d--_d---- (Resister), n---p-- (left, resister), Man----y--- (left, resister), 4--7--(republican), Golf---Jo--_(Trump supporter), covid19_alerts, F----l33 (Spanish), Fl--A-- (non-English journalist).</li>
+                <li><span style="color: #0000ff;">We can clearly see that the US partisan players dominate the most important figures in COVID19 discussion on Twitter. This will also help us to identify the characteristic of each clusters.</span></li>
+                </ul>
+                <img class="rounded-md" src="../assets/img/thumb/crop13.png" alt="...">
+                <p>&nbsp;</p>
+                <p><strong>Clustering Analysis </strong>(Graph 1.2)</p>
+                <p>The network graph is colored based on 9 clusters. Each cluster has one to three hubs that represent as influencers or opinion leaders</p>
+
+                <p>Here&rsquo;s a brief summarization of each cluster:</p>
+                <img class="rounded-md" src="../assets/img/thumb/crop16.png" alt="...">
+                <p>&nbsp;</p>
+                <ul>
+                <strong><li style="color:purple;">Purple (28.28%): Left, resisters, LGBT</li>
+                <li style="color:green;">Green (15.63%): Republican, Trump supporters</li>
+                <li style="color:pink;">Dark and light pink (18.41%): US news</li>
+                <li style="color:red;">Red (11.85%): French news/ information</li>
+                <li style="color:yellowgreen;">Yellow (10.07%): International news/ information (non-English)</li>
+                <li style="color:grey;">Grey (4.7%): Spanish information</li></strong>
+                </ul>
+                <img class="rounded-md" src="../assets/img/thumb/party.jpg" alt="...">
+                <p style="text-align: center;">Photo by Sharon McCutcheon on Unsplash</p>
+                <p>&nbsp;</p>
+
+                <p>Similarly, the dominated cluster are <strong>partisan related communities</strong>, while <strong style="color:blue">left</strong> and <strong style="color:red">right</strong> communities interact with each other frequently. When we focus on <strong>non-English information</strong>, majority of the nodes are relevant to <strong>news</strong>. The non-English clusters seldomly interact with English-speaking clusters (the US cluster) probably because of the <strong>language barriers</strong>. However, there are still many activities going on within non-English clusters. The remain pink cluster is local news related (the US news). This does not mean all nodes are automatically news outlets, but some of them are news hubs, such as <strong>CBC news, Sky News, Covid19_alert</strong>, while the rest of them could be journalists or Twitter influencers who like to follow and retweet news.</p>
+                <p>&nbsp;</p>
+ 
+            </div>
+          </div>
+
+
+
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+             
+              <p>&nbsp;</p>
+              <p>This article covers a brief introduction of network analysis by using Gephi. You can check out the reading of <strong>network analysis methodology comparison </strong> at </p>
+              <p><a href="project_NLP2.html"><strong><em>Review: Four Sentiment Analysis Methods in Python (2)</em></strong></a></p>
+            
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../../index.html"><img src="../../assets/img/logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-twitter" href="https://twitter.com/JoyceOoops"><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" href="https://www.linkedin.com/in/joyce-yanru-jiang/"><i class="fa fa-linkedin"></i></a>
+        </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="../../theme/page/about-2.html">About</a>
+              <a class="nav-link" href="https://twitter.com/JoyceOoops">Twitter</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/joyce-yanru-jiang/">LinkedIn</a>
+              <a class="nav-link" href="../../theme/page/policy.html">Policy</a>
+              <a class="nav-link" href="../../theme/page/contact-1.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>
