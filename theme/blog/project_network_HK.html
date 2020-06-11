@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Twitter Network Analysis</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="../../index.html">
+            <img class="logo-dark" src="../../assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="../../assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="../../theme/page/about-2.html" style="color:black">About Me</a>
+            <a class="nav-link" href="../../theme/blog/research.html" style="color:black">Research</a>
+            <a class="nav-link" href="../../theme/blog/project.html" style="color:black">Project</a>
+            <a class="nav-link" href="../../theme/blog/data.html" style="color:black">Data Analytics</a>
+            <a class="nav-link" href="../../theme/page/contact-1.html" style="color:black">Contact</a>
+          </nav>
+        </section>
+
+        <a class="btn btn-sm btn-round btn-dark" href="../../theme/page/about-2.html">About Me</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Blog content
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section">
+        <div class="container">
+
+          <div class="text-center mt-8">
+            <h2>Comparing Gephi and NodeXL for Twitter Network Analysis  -- A Case Study of Hong Kong National Security Law
+              </h2>
+            <p>June 8, 2020 By <a href="#">Joyce Jiang</a></p>
+          </div>
+
+
+          <div class="text-center my-8">
+            <img class="rounded-md" src="../assets/img/thumb/hk.jpg" alt="...">
+            <p>Photo by Joseph Chan on Unsplash</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p class="lead">In this case study, I’ll be comparing two Twitter network analysis tools, <strong>NodeXL and Gephi</strong>, for a same subject: Hong Kong National Security Law announced in the week of May 18, 2020 (around May 24), while “Washington's reaction to Beijing's announcement was swift” around May, 27, 2020. The announcement has been raised discussion among different communities on Twitter, such as Hong Kong people, news outlets, and political figures in both Hong Kong and the US. </p>
+              <img class="rounded-md" src="../assets/img/thumb/crop17.png" alt="..."><p>&nbsp;</p>
+
+              <h4>NodeXL</h4>
+              <p>The tool has an embedded clustering algorithm called Clauset-Newman-Moore (CNM), which is suitable for large network clustering. NodeXL captures all kinds of engagement on Twitter, which include tweet, retweet, replies, and mentions.</p>
+              <p>The following network shows Twitter search results of:</p>
+              <ul>
+              <li>#NationalSecurityLaw Hong Kong , May 30 &ndash; June 1 (Graph 1)</li>
+              </ul>
+              <p><strong><br /> </strong></p>
+
+              <p>In Graph 1.2, the nodes with profile photos are users that received the highest engagement (usually received the most mentions) on Twitter. Users will get more mentions in three scenarios: (1)they are reliable sources of information cited frequently by Twitter users, (2)they receive many replies because replies automatically include mentions, (3) they are important figures so people mention them in conversation &ndash; all these three features make the prominent nodes opinion leaders in this network. Major clusters and opinion leaders in this network are:</p>
+
+              <p>G1: Local news, informative news network</p>
+              <ul>
+              <li><strong>Woppa</strong>: covering Hong Kong Protest and supporting Hong Kong&rsquo;s independency</li>
+              <li><strong>Stand News</strong></li>
+              </ul>
+              <p>G2: Local news and featured reporters</p>
+              <ul>
+              <li><strong>HKFP, Freedom HK, Apple News Daily</strong></li>
+              <li><strong>Jimmy Lai</strong>: editor from Apple News Daily, supporting protests</li>
+              <li><strong>Truth about China</strong></li>
+              <li><strong>Inter-Parliamentary Alliance on China (IPAC):</strong> An international cross-party group of legislators working to reform the approach of democratic countries to China</li>
+              </ul>
+              <p>G4: Activists</p>
+              <ul>
+              <li><strong>Joshua Huang</strong>: activist, working at Demosisto</li>
+              <li><strong>Sunny Cheung</strong>: activist student, HKFS Student Organization</li>
+              <li><strong>Nathan Law</strong>: activist, founding chair of Demosisto</li>
+              </ul>
+              <p>G5+G6: International news</p>
+              <ul>
+              <li><strong>Mike Pompeo</strong> (US Secretary), <strong>Donald Trump</strong></li>
+              <li><strong>US News Outlets: Fox Business, Reuters, AFP news agency,</strong> <strong>Mornings with Maria</strong> (top reporter at Fox Business)</li>
+              <li>G6 cluster: <strong>The Epoch Times, Frank Fang </strong>(reporter of Epoch time), <strong>NTD News</strong> (sister news outlet of The Epoch Times)</li>
+              </ul>
+              
+              <img class="rounded-md" src="../assets/img/thumb/crop18.png" alt="..."><p>&nbsp;</p>
+              <p>The top website domain in most communities was <strong>HKFP (HK)</strong>, which demonstrates its influence in addressing recent social unrest issues in Hong Kong. <strong>SCMP (mainland/HK), Reuters (UK), The Epoch Times (US), The Pigeon Express (unidentified), The Guardian (US), YouTube (international) and NYTimes (US)</strong> also appeared frequently in several communities. However, the webpage that dominated <strong>activist community </strong>was the following page from change.org, which allowed viewers to sign a petition for objecting National Security Law. The popularity of change.org demonstrates activists&rsquo; active participation in supporting democracy and objecting this national policy.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop19.png" alt="..."><p>&nbsp;</p>
+              <p>Interestingly, the US political influencers and media outlets have been mentioned a lot in the discussion of National Security Law. Obviously, republicans, such as Donald Trump, Mike Pompeo and Fox Business, were more dominated in the network than democrats. Here are some sample tweets that mentioned these republicans: &nbsp;</p>
+              <ul>
+              <li>@dcexaminer @realDonaldTrump While Hong Kong ers have tried our very best to fight against the #NationalSecurityLaw and the #HKPoliceState , would USA and the world please #StandWithHongKong and help us to fight against the CCP</li>
+              <li>The #CCP has passed the #NationalSecurityLaw. This is going to destroy Hong Kong's freedom of speech and deprive the right to protest.Hong Kong is no longer autonomous from China.I beg @BorisJohnson @realDonaldTrump to #SanctionCCP.🙏🏽</li>
+              <li>@SecPompeo Thanks for Standing with HongKongers!! WE will not surrender!</li>
+              <li>#China has crossed lines, and now it will not stop until it is stopped. #Hong Kong is our first test. #NationalSecurityLaw @MariaBartiromo @MorningsMaria @FoxBusiness</li>
+              </ul>
+              <p>Hong Kong people were calling for help from republicans probably because Republican is the ruling party in the US or republicans are generally more aggressive in their political stances.</p>
+              <p>The red edges refer to the tweets that had negative sentiments, which were more prominent in G2, G5 and G6. G4 did not contain negative sentiments because all activists were promoting petition from change.org, which was a neutral content. G2 included the local new reports that had negative attitudes toward the announcement of the law. G5 + G6 included tweets shared by &ldquo;helpless&rdquo; Hong Kong people who were &ldquo;seeking for help&rdquo; from the US Republican.</p>
+              <p>&nbsp;</p>
+              <h4>Gephi</h4>
+              <p>This tool can visualize the relationship of most tonologies in network analysis. I will address three of them in the following networks:</p>
+              <ul>
+              <li><strong>Clusters:</strong> identify different communities in a Twitter network</li>
+              <li><strong>PageRank:</strong> iterate the importance of all nodes in a network, identify the importance of the connected nodes to one node, and determine the importance of this node (similar to Google Page Rank)</li>
+              <li><strong>Betweenness:</strong> identify gatekeepers of the spread work, the node with high betweenness sever as a hub or control the information flow between communities</li>
+              </ul>
+              <p>Gephi can only analyze retweet and mention engagement in separate networks, so I analyzed them separately. The following network shows Twitter search results of:</p>
+              <ul>
+              <li>Mentions of National Security Law related content
+              <ul>
+              <li>#NationalSecurityLaw Hong Kong + #NationalSecurityLaw + National Security Law + National Security Laws Hong Kong , May 27 (Graph 2.1.1- 2.1.3)</li>
+              </ul>
+              </li>
+              </ul>
+              <p>&nbsp;</p>
+              <p><strong>Mentions in &ldquo;National Security Law&rdquo;</strong></p>
+              <p>Gephi networks demonstrated similar results with NodeXL. Modularity clustering grouped this network into five dominant communities. The larger node means it has higher in-degree value &ndash;received more mentions in this Twitter network.</p>
+    
+              <p><strong>Clusters</strong></p>
+              <p><strong>The pink cluster was composed by international media houses</strong>. Reuters is the leading player in this community, followed by featured press outlets from the US, such <strong>as CNBC, TIME, NYTimes, The Guardian, and WSJ</strong>, and other international news outlets like The <strong>Toronto Star (Canada), MailOnline (UK), AFP (France),</strong> etc.</p>
+              <p>It is clearly that @SecPompeo (Mike Pompeo) led the discussion in the <strong>cyan cluster</strong>. <strong>This cluster included more users from Hong Kong, such as HKFP, and Studio Incendo</strong> (a page featuring HK protest photos and videos), <strong>Sunny Cheung</strong> (student activist), etc. Mike Pompeo received high mentions in this community because he &ldquo;told Congress Hong Kong is no longer autonomous from China&rdquo; on May, 27. Hong Kong people were mentioning Mike Pompeo and other US senators for help. This kind of engagement, also found in NodeXL network, occurred in both cyan and pink cluster. Here is a sample of a tweet that mentioned Mike Pompeo:</p>
+              <p>&ldquo;HK has been in the news a ton over the last year or so. There have been many pro-democracy demonstrations, a controversial extradition bill, a recently approved national security law, and now @SecPompeo saying that the US will likely end HK's special trade status.&rdquo;</p>
+              <p>Similar to what we found in NodeXL, <strong>the orange cluster is a group of activists</strong>. The media channel <strong>Demosisto</strong> dominated the discussion, followed by activists like <strong>Benedict Rogers</strong> (Human rights activist specializing in Asia), <strong>Claudia Mo </strong>(Hong Kong democratic legislator), etc.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop20.png" alt="..."><p>&nbsp;</p>
+
+              <p><strong>PageRank</strong></p>
+              <p>The higher the PageRank, the redder the node is, and the more central the node is.</p>
+              <p><strong>Mike Pompeo, Reuters, and Donald Trump</strong> were identified as the most important figures in this network, followed by <strong>SCMP, Clare Jim and Noah Sin, Studio Incendo and Luke de Pulford</strong>, because they were mentioned by important users.</p>
+              <ul>
+              <li><strong>Donald Trump</strong> was mentioned by Solomon Yue (Republicans Overseas), Jimmy Lai (Apply Daily News), and Mike Pompeo.</li>
+              <li><strong>SCMP</strong> is dark red also because it was mentioned by Mike Pompeo. <strong>Reuters</strong> was the most important newspaper.</li>
+              <li>Most important figures have large nodes, which means they have been mentioned a lot. The only outlier is the node of <strong>Clare Jim and Noah Sin</strong>. Since they are journalists from Reuters, they are more likely to be connected with important users.</li>
+              <li><strong>Studio Incendo</strong>&rsquo;s photos and videos could be shared by major people and newspapers.</li>
+              <li><strong>Luke de Pulford </strong>works at IPAC so he is also likely to be frequently mentioned by activists.</li>
+              </ul>
+              <img class="rounded-md" src="../assets/img/thumb/crop21.png" alt="..."><p>&nbsp;</p>
+              <p><strong>Betweenness</strong></p>
+              <p>The higher the betweenness, the redder the node is, and the more central the node is.</p>
+              <p>Fewer nodes show the characteristics of betweenness and almost none of the nodes have intermediate level of betweenness. The highest one is <strong>Reuters, Gordon G. Chang, wlctv.ca and Wilson Leung.</strong></p>
+              <ul>
+              <li><strong>Gordon G. Chang:</strong> Chinese American columnist, blogger, television pundit, author and lawyer.</li>
+              <li><strong>Wilson Leung:</strong> Hong Kong barrister (lawyer) and pro-democracy activist.</li>
+              <li><strong>ca</strong>: independent reporter, videographer, stringer, documentarian</li>
+              </ul>
+              <p>Though Gordon G. Chang and Wilson Leung did not have many mentions, they interacted with each other as well as Reuters, andelctv.ca and activists, which was a wide range of diversified users. Similarly,<strong> Luke de Pulford </strong>also interacted with US politicians and the activist group.<strong>&nbsp; </strong></p>
+              <p><strong>HKFP</strong> has high betweenness because it is the leading media company in Hong Kong. It is interesting to see both <strong>Reuters and AFP</strong> have high betweenness because they are actually <strong>news agencies </strong>instead of general media outlets that only target at the public. New agencies would sell news to other media channels, which make them information hubs in this network.</p>
+              <p><em>Graph 2.1.3 Betweenness in the Twitter Mentions Network of &ldquo;National Security Law&rdquo;</em></p>
+              <p><strong>Comparison and Bot Activity</strong></p>
+              <p>The following two network graphs are used for comparing the important figures in different Twitter networks.</p>
+              <p>In both of the networks, <strong>Wilson Leung</strong> is one of the most important players. One outlier I found in &ldquo;Hong Kong Protests&rdquo; network is a user named <strong>tragictragedy</strong>. It wrote in its bio:</p>
+              <p>&ldquo;I &rsquo;ve been so lazy and I &rsquo;m a <u>bot</u>. I want to have a little freedom. I want to have more time and more time.&rdquo;</p>
+              <p>This makes sense because a bot would be able to create a lot of retweets as compared to humans, which makes it connected to more important pages on Twitter.&nbsp;</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop22.png" alt="..."><p>&nbsp;</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop23.png" alt="..."><p>&nbsp;</p>
+
+              <p><strong>&nbsp;</strong></p>
+              <h4>Summary</h4>
+              <p>Twitter network analysis is powerful in visualizing the media landscape and capturing the interaction between social media users regarding the recent social unrest in Hong Kong. From the two networks analyzed, HKFP and SCMP are the leading local news publishers, while Reuters and AFP are the dominate news agencies. US news outlets, such as CNBC, NYTimes and CNN, appear to be the most active influencers. Demosisto is the leading pro-democracy activism media channel in covering the recent protest, followed by Apple News Daily.&nbsp;</p>
+              <p>From Hong Kong people side, a lot of users were actively engaging with US politicians and senators, such as Mike Pompeo and Donald Trump, and calling for support. Maybe they are trying to get attention from the US side or maybe they are planning on some conspiracy on Twitter because several accounts showed <strong>bot-like activities</strong>.</p>
+              <p>A special cluster of users is the activist groups. Most of them are Hong Kong locals who identify themselves as activists in their bios, and some of them are Caucasian foreigners who have Cantonese names in their bios. These activists have been promoting petition of signing to object the new law released by the Chinese government. At the same time, they interacted with Luke de Pulford and IPCA to seek for help from international human right and democratic organizations.</p>              
+
+              <p>&nbsp;</p>            
+              <p>&nbsp;</p>
+              <p>This article use a case study of Twitter research results of #NationalSecurityLaw for demonstration. To learn more about network analysis, you can check out </p>
+              <p><a href="project_network.html"><strong><em>Comparing Gephi and NodeXL for Twitter Network Analysis</em></strong></a></p>
+              <p>&nbsp;</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../../index.html"><img src="../../assets/img/logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-twitter" href="https://twitter.com/JoyceOoops"><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" href="https://www.linkedin.com/in/joyce-yanru-jiang/"><i class="fa fa-linkedin"></i></a>
+        </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="../../theme/page/about-2.html">About</a>
+              <a class="nav-link" href="https://twitter.com/JoyceOoops">Twitter</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/joyce-yanru-jiang/">LinkedIn</a>
+              <a class="nav-link" href="../../theme/page/policy.html">Policy</a>
+              <a class="nav-link" href="../../theme/page/contact-1.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>

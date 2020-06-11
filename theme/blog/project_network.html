@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Twitter Network Analysis</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="../../index.html">
+            <img class="logo-dark" src="../../assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="../../assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <nav class="nav nav-navbar">
+            <a class="nav-link" href="../../theme/page/about-2.html" style="color:black">About Me</a>
+            <a class="nav-link" href="../../theme/blog/research.html" style="color:black">Research</a>
+            <a class="nav-link" href="../../theme/blog/project.html" style="color:black">Project</a>
+            <a class="nav-link" href="../../theme/blog/data.html" style="color:black">Data Analytics</a>
+            <a class="nav-link" href="../../theme/page/contact-1.html" style="color:black">Contact</a>
+          </nav>
+        </section>
+
+        <a class="btn btn-sm btn-round btn-dark" href="../../theme/page/about-2.html">About Me</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Blog content
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section">
+        <div class="container">
+
+          <div class="text-center mt-8">
+            <h2>Comparing Gephi and NodeXL for Twitter Network Analysis</h2>
+            <p>June 9, 2020 By <a href="#">Joyce Jiang</a></p>
+          </div>
+
+
+          <div class="text-center my-8">
+            <img class="rounded-md" src="../assets/img/thumb/network2.jpg" alt="...">
+            <p>Photo by Alina Grubnyak on Unsplash</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p class="lead">I used two network analysis tools (Gephi and NodeXL) to compare the Twitter networks of ANTIFA related content. Since network analysis is more likely to reveal some insights though its visualization instead of providing scientific results and conclusions, this method has been used a lot for exploring a phenomenon or a research question rather than proving a hypothesis.  </p>
+              <img class="rounded-md" src="../assets/img/thumb/crop24.png" alt="..."><p>&nbsp;</p>
+              <p>Network analysis is composed by edges and nodes. Edges are the relationship between nodes. In the Twitter network, <strong>nodes represent Twitter users and edges represent engagement between users, which includes retweet, replies, and mentions. </strong></p>
+              <img class="rounded-md" src="../assets/img/thumb/crop25.png" alt="..."><p>&nbsp;</p>
+              <p>I explored two network analysis tools in this report: <strong>NodeXL and Gephi. </strong></p>
+              <p>NodeXL is an <u>excel template</u> for conducting network analysis. It has been used a lot in social media research because of its capability of <strong>scraping data from Twitter, Facebook (now disabled), Flickr and MediaWiki.</strong> It is also powerful in clustering a large dataset, performing elementary sentiment analysis and analyzing key words in each cluster.</p>
+              <p>Gephi is used by both beginning and advanced level of users and it is also the most popular open-source tool among network analysts and researchers. The advantage of Gephi is its <strong>computational capability of calculating all network tonologies,</strong> such as PageRank, Betweenness, Closeness, and Degrees, etc., in the shortest time.</p>
+              <p><strong>Terminologies</strong></p>
+              <ul>
+              <li><strong>Clustering:</strong> the network could be clustered into sub-communities/ clusters, usually achieved by embedded algorithms in the network analysis tool.</li>
+              <li><strong>Sentiment analysis</strong>: identify the sentiment of the text, usually achieved by identifying positive and negative adjectives in sentences.</li>
+              <li><strong>Degree</strong>: number of edges connected to one node
+              <ul>
+              <li>In-degree: Number of directed interactions received by one node</li>
+              <li>Out-degree: Number of directed interactions sent out by one node</li>
+              </ul>
+              </li>
+              <li><strong>Closeness:</strong> average of shortage path of one node to every other node, explains how close a node connected to other node.
+              <ul>
+              <li>disease spread</li>
+              </ul>
+              </li>
+              <li><strong>Betweenness</strong>: percentage of shortest path that cross the node
+              <ul>
+              <li>social network</li>
+              <li>identify gatekeeper of the spread work (information flow)</li>
+              <li>betweenness node: monitoring network</li>
+              </ul>
+              </li>
+              <li><strong>PageRank/Eigenvector centrality</strong>: measure of node&rsquo;s importance
+              <ul>
+              <li>Iterative matrix computation that gives more weight to the nodes that are important</li>
+              <li>Google page rank (Wikipedia, CNN get more credits for links)</li>
+              </ul>
+              </li>
+              </ul>
+              <p>&nbsp;</p>
+              <p><strong>Twitter network</strong></p>
+              <p>Twitter is mostly used by international users and the majority of them are US users. Twitter network is usually dominated by journalists and media outlets, which makes it a good starting point to analyze news and trending topics with international voices and opinions.</p>
+              <p>I chose Twitter network to start with because it is easier to obtain data from Twitter than from other social media platforms (Instagram and WhatsApp are not open platforms and Facebook applied restriction to scraping data recently). Another reason is that Twitter network is the most frequently-analyzed social media network among researchers because of its international feature, which means I could find more references for analyzing this network. The limitation of Twitter is that it only allows developers to trace and scrape data from <strong>one week</strong> before, so it works better for news and trending topics like ANTIFA than ongoing discussion and topics like public health. &nbsp;</p>
+
+              <p>&nbsp;</p>
+              <h4>NodeXL</h4>
+              <p>NodeXL has both <strong>free version and pro version</strong>. Its Pro version has plenty of useful functions such as <strong>calculating network metrics</strong> and directly <strong>importing data from Twitter</strong> and other social media. For its free version, the limit of Twitter data to be collected is 2000 tweets and it includes have any <strong>textual analysis</strong> for Twitter datasets. NodeXL captures all kinds of engagement on Twitter, which include <strong>tweet, retweet, replies, and mentions</strong>. If you only want to explore the clustering function and <strong>groups-in-the-box</strong> feature, you can start with the free version.</p>
+              <p>&nbsp;</p>
+              <p><strong>Clauset-Newman-Moore (CNM)</strong></p>
+              <p>The tool has an embedded clustering algorithm called <strong>Clauset-Newman-Moore (CNM)</strong>, which is suitable for large network clustering.</p>
+              <p><strong>CNM</strong> is handful for analyzing a large dataset because its algorithm is similar to a &ldquo;decision-tree&rdquo; rationale that CNM will keep clustering until there are only single nodes left in this network. With this feature, CNM usually creates from fifty to thousands of clusters for a large and complex network. I found CNM is very accuracy in grouping similar content into one cluster. However, the drawback is that CNM is usually too clustered for most network because this algorithm &ldquo;wants to keep clustering to the end&rdquo; when there&rsquo;s only scattered nodes left. What most researchers have done is deleting the smaller clusters, and only keep the most prominent one (around 10-15 clusters). Though most of the clusters are deleted, around 60-90% data could be covered by the most prominent clusters.</p>
+              <p>&nbsp;</p>
+              <p><strong>Groups-in-box (GIB) Visualization</strong></p>
+              <p>NodeXL has its powerful <strong>groups-in-box (GIB) visualization</strong> like what I show below. Additionally, with its text analysis functions, NodeXL could label each group with the most frequent words, the most mentioned users, the most replied users and other features as the group label. I illustrate a comparison of both labeled and non-labeled networks.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop26.png" alt="..."><p>&nbsp;</p>
+              <p><strong>Textual Analysis</strong></p>
+              <p>This&rsquo;s the function that has been found very useful for most communication researchers because you can compare the most frequent words and domains in each cluster as well as the most mentioned users.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop27.png" alt="..."><p>&nbsp;</p>
+              <p>Web domains could reveal the source of information in each cluster. For instance, ANTIFAnetwork is dominated by partisan news outlets, especially right-wing media such as Foxnews, Breitbart, The Conservative Treehouse, The Gateway Pundit, etc. The only exceptions are CNN, a left-wing media channel, and YouTube, a media platform.</p>
+              <p>&nbsp;</p>
+              <p><strong>Network Analysis </strong></p>
+              <ul>
+              <li><strong>Scaling</strong></li>
+              </ul>
+              <p>After selecting all metrics for computation, I usually start with the <strong>in-degree metric</strong> so I could identify the major figures in each cluster. I would set node size of user with in-degree values above 10% of the highest in-degree value to <strong>1000</strong>, instead of using <strong>autofill function</strong>. The autofill function would assign size numbers that have linear relationship with in-degree values, but this would make some prominent nodes hard to be seen in the network. Using profile photos for node shapes would further reduced the visibility of important nodes.</p>
+              <ul>
+              <li><strong>Identifying Opinion Leaders</strong></li>
+              </ul>
+              <p>Once I visualize the major players in each cluster, I would check their bios and recent posts on Twitter. Some of the influencers are easy to identify, such as Trump and CNN. Since most of the networks I analyzed were related to politics, prominent users usually have party affiliations or support some kind of political movement (eg. activist, pro-democracy, etc.). Some of them might be actively engaged with the conversation, some of them might just have been mentioned frequently in this conversation. You need to check which kinds of engagement do they have in this network. I would check this by <strong>selecting these influencers for both Vertex 1 and Vertex 2 on the Edges sheet</strong> and see what kind of tweet content and engagement do they have.</p>
+              <ul>
+              <li><strong>Cluster Analysis </strong></li>
+              </ul>
+              <p>Once I identify important players, I will be able to find some similarity of users within one cluster. Sometimes you would realize that several clusters are discussing some topics, so you can group them into one giant cluster. It&rsquo;s not necessary that all prominent users in one cluster have the same political stance or affiliation. For instance, you would find republicans and democrats interact within one cluster (light blue), or activists engage with human right organizations in one community.&nbsp;</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop28.png" alt="..."><p>&nbsp;</p>
+
+              <p><strong>Strengths</strong></p>
+              <ul>
+              <li>It&rsquo;s more user-friendly than Gephi at the beginning. Most users would be familiar with Excel than exploring a Java-based software like Gephi.</li>
+              <li>It&rsquo;s good for large network clustering and illustrating through GIB function.</li>
+              <li>Additionally, you can play with the fancy visualization in NodeXL. My favorite one is selecting Twitter profile photos for node shapes.</li>
+              <li>Another big advantage is that you can check all metrics, details, graphs, and content on the same dashboard. In Gephi, you probably need to switch back and forth between Gephi&rsquo;s data lab, visualization, and you own workbook which stores Twitter dataset.</li>
+              </ul>
+              <img class="rounded-md" src="../assets/img/thumb/crop29.png" alt="..."><p>&nbsp;</p>
+              <p><strong>Weaknesses </strong></p>
+              <ul>
+              <li>This software is too slow in processing the network analysis. It takes a super long time to scrape data from Twitter (as compared to Python and Nvivo I used for web scraping) and sometimes this software could crash when you are calculating metrics, using autofill function, or visualizing you network.</li>
+              <li>Although NodeXL includes all tonologies that Gephi has for network analysis, it only takes Gephi couple second to get those metrics. For NodeXL, it takes around couple minutes.</li>
+              <li>CNM cluster is generally good for a large network, but I have found this grouping method to be too clustered and eventually, several clusters just contain similar content. GIB function also <strong>lose some interaction between each community and influencers</strong> because you could be too focused within each sub-network.</li>
+              <li>The visualization is not as pretty as it is in Gephi. Gephi has more choice for color and size selection and this process is much smoother than it is in NodeXL.</li>
+              <li>There&rsquo;s <strong>no vector graphic choice</strong> for export the network graph. Vector graphic creates graph whose elements won&rsquo;t be blurred when users enlarge the graph. Exporting to PDFs is a vector graphic choice. The vector graph would be very useful when you want to share all visualized information in the network instead of simply illustrating a brief snapshot of it. <strong><br /> </strong></li>
+              </ul>
+              <p>&nbsp;</p>
+              <h4>Gephi</h4>
+              <p>This tool can visualize the relationship of most tonologies in network analysis. I will address three of them in the following networks:</p>
+              <ul>
+              <li><strong>Clusters:</strong> identify different communities in a Twitter network</li>
+              <li><strong>PageRank:</strong> iterate the importance of all nodes in a network, identify the importance of the connected nodes to one node, and determine the importance of this node (similar to Google Page Rank)</li>
+              <li><strong>Betweenness:</strong> identify gatekeepers of the spread work, the node with high betweenness sever as a hub or control the information flow between communities</li>
+              </ul>
+              <p><strong>Data Preprocessing </strong></p>
+              <p>This&rsquo;s an extra step for Gephi. I use the following tools for this step:</p>
+              <ul>
+              <li><strong>Nvivo</strong> for scraping Twitter dataset (could be replaced with Python)</li>
+              <li><strong>Python</strong> for data cleaning (edge and node dataset)</li>
+              <li><strong>Gephi</strong> for network analysis</li>
+              </ul>
+
+              <p>Since I use other tools to scrape data from Twitter, I usually analyze <strong>retweet</strong> and<strong> mention</strong> engagement on Gephi in separate networks.</p>
+
+              <p><strong>Data Laboratory </strong></p>
+              <p>Gephi doesn&rsquo;t have those fancy tools like GIB or textual analysis in NodeXL, but it&rsquo;s more user-friendly for researchers and data scientists who are interesting in presenting a beautiful network graph. Keeping network graphs and data laboratory in separate dashboard, Gephi is able to compute network metrics much faster than NodeXL does. You can find all calculated network metrics on the data lab dashboard.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop30.png" alt="..."><p>&nbsp;</p>
+              <p><strong>Cluster Analysis</strong></p>
+              <p>Here&rsquo;s a sample of a color-clustered ANTIFA (retweet) network. We can see that the Gephi network illustrates relationships between each cluster and influencer in a more readable and presentable way. The limit is that for some complicated networks or network without prominent clustering features, Gephi&rsquo;s embedded clustering algorithm <strong>Modularity Cluster</strong> won&rsquo;t be able to assign nodes properly to the sub-communities they belong to. Although we could use other Gephi&rsquo;s plug-in clustering algorithm, they are super slow and could easily crash this software for a large dataset. Zoom-in this network, you will be able to find similar large nodes to what we showed in the NodeXL network.</p>
+              <p>With Gephi&rsquo;s network, I would be able to tell which community dominated the discussion of ANTIFA (retweet):</p>
+              <ul>
+              <li>The <strong>pink cluster</strong> which is composed by mainly republican figures.</li>
+              <li>The users in the <strong>green cluster</strong> are mainly democrats. Clearly this sub-community seldomly interact with the pink cluster, and they need several intermediate steps to even reach out to a node from the pink group.</li>
+              </ul>
+              <img class="rounded-md" src="../assets/img/thumb/crop31.png" alt="..."><p>&nbsp;</p>
+              <p><strong>Comparing ANTIFA retweet and mention clusters </strong></p>
+              <p>These two networks show similar clustering results of grouping republicans and democrats to different clusters, which are also the two clusters that dominated the conversation of ANTIFA. The difference is that republicans&rsquo; community is not that segregated from the democrats&rsquo; one.&nbsp; This also makes sense because it would be more possible to find political figures mentioning people from different parties than directing retweeting their tweets.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop32.png" alt="..."><p>&nbsp;</p>
+
+              <p><strong>Centrality Analysis </strong></p>
+              <p>I would explore the centrality of important nodes with <strong>Degree, PageRank and Betweenness</strong> metrics. For ANTIFA retweet, these metrics did not give an intuitive illustration, so I used it&rsquo;s mention network to demonstrate these metrics.&nbsp;</p>
+              <p><strong>Degree</strong></p>
+              <p>I would use degree metrics for scaling purpose. The higher the degree, the larger the node is, and the more central the node is. This rule applies to both in-degree and out-degree values. It&rsquo;s researchers&rsquo; discretionary decision to select between in-degree, out-degree or total degree for visualization. My recommendation is that:</p>
+              <ul>
+              <li>For a <strong>retweet network,</strong> start with filtering and scaling in-degree values because we don&rsquo;t want to include &ldquo;fan&rsquo;s activity&rdquo; in the retweet network.</li>
+              <li>For a <strong>mention network,</strong> start with total degree because there won&rsquo;t be a lot of edge relationships left in the mention network, which means all links in this network is meaningful!</li>
+              </ul>
+              <p>Obviously, Trump and other center of each cluster in the ANTIFA mention network have higher degree values and large nodes. I usually keep the same scaling for all nodes by using only their degree values for sizes and switch coloring options between <strong>clustering, betweenness and PageRank</strong> to analyze the entire network relationship.</p>
+              <p>&nbsp;</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop32.png" alt="..."><p>&nbsp;</p>
+
+              <p><strong>Betweenness </strong></p>
+              <p>I would use betweenness or PageRank metrics for coloring purpose. The higher the betweenness, the redder the node is, and the more central the node is.</p>
+              <p>Although Trump is the largest node in the ANTIFA mention network, he doesn&rsquo;t have a high betweenness as compared to <strong>Jack Posobiec</strong> or <strong>Andy Ng&ocirc;</strong>. Clearly, central nodes in sub-communities would have high betweenness values because they effectively <strong>promote the information flow</strong> between different communities.</p>
+              <img class="rounded-md" src="../assets/img/thumb/crop33.png" alt="..."><p>&nbsp;</p>
+
+              <p><strong>PageRank</strong></p>
+              <p>The higher the PageRank, the redder the node is, and the more central the node is. Differing from the last graph, <strong>Trump</strong> is almost the only node that has a high PageRank because it has been connected to other important nodes, such as <strong>Jack Posobiec</strong>. A node would have a higher PageRank value when it connects to more journalists, political figures, and media channels.</p>
+
+              <img class="rounded-md" src="../assets/img/thumb/crop34.png" alt="..."><p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p><strong>Strengths</strong></p>
+              <ul>
+              <li>Gephi is free and also the most used open-source network analysis tool among researchers.</li>
+              <li>It takes only couple of seconds for Gephi to calculate network metrics.</li>
+              <li>Gephi has more flexibility in its network visualization. It has more sizing and coloring options to create a presentable network.</li>
+              <li>Gephi has many embedded layout algorithms and plug-in for users to explore different options of network optimization.</li>
+              <li>Researchers can focus on more network metrics as compared to NodeXL.</li>
+              <li>Gephi can <strong>export network to a vector graphic format</strong> as I mentioned before.</li>
+              </ul>
+              <p><strong>Weaknesses</strong></p>
+              <ul>
+              <li>It doesn&rsquo;t have CNM algorithm and GIB option for clustering and sometimes Modularity clustering doesn&rsquo;t work properly for large or very scattered dataset.</li>
+              <li>It&rsquo;s less user-friendly for beginning level of users.</li>
+              </ul>
+              <p>&nbsp;</p>
+              <h4>Summary</h4>
+              <p><strong>NodeXL</strong> is easier to use for beginners and it&rsquo;s specifically handful when analyzing social media networks because it can directly scrape data from social media. Additionally, it&rsquo;s convenient for users to check back and forth between a network graph and details of nodes and edges. NodeXL has several embedded tools like GIB, CNM clustering, and textual analysis, which would be useful for communication researchers. <strong>The biggest drawback is its computational capability</strong>, which is much slower than Gephi does.</p>
+              <p><strong>Gephi</strong> is suitable for both beginning and advanced level of users. It is powerful in computing network metrics in shortest time and flexible in providing multiple visualizing options for users.</p>
+              <p>These tools can be used as complimentary tools for each other to double check clusters and influencers analyzed by each tool.</p>
+              <p>&nbsp;</p>            
+              <p>&nbsp;</p>
+              <p>In the next article, I use a case study of Twitter research results of #NationalSecurityLaw for demonstration. To learn more about network analysis, you can check out </p>
+              <p><a href="project_network_HK.html"><strong><em>Comparing Gephi and NodeXL for Twitter Network Analysis -- A Case Study of Hong Kong National Security Law </em></strong></a></p>
+              <p>&nbsp;</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../../index.html"><img src="../../assets/img/logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-twitter" href="https://twitter.com/JoyceOoops"><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" href="https://www.linkedin.com/in/joyce-yanru-jiang/"><i class="fa fa-linkedin"></i></a>
+        </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="../../theme/page/about-2.html">About</a>
+              <a class="nav-link" href="https://twitter.com/JoyceOoops">Twitter</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/joyce-yanru-jiang/">LinkedIn</a>
+              <a class="nav-link" href="../../theme/page/policy.html">Policy</a>
+              <a class="nav-link" href="../../theme/page/contact-1.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>
